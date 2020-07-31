@@ -6,7 +6,7 @@ org.springframework.context.ApplicationContextException: Unable to start web ser
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.course.system.SystemApplication.main(SystemApplication.java:12)
+	at com.course.SystemApplication.main(SystemApplication.java:12)
 Caused by: org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:203)
 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
@@ -20,7 +20,7 @@ org.springframework.context.ApplicationContextException: Unable to start web ser
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.course.system.SystemApplication.main(SystemApplication.java:12)
+	at com.course.SystemApplication.main(SystemApplication.java:12)
 Caused by: org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:203)
 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
@@ -101,7 +101,7 @@ com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Con
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.course.system.SystemApplication.main(SystemApplication.java:14)
+	at com.course.SystemApplication.main(SystemApplication.java:14)
 Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at java.net.PlainSocketImpl.socketConnect(Native Method)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
@@ -178,7 +178,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.course.system.SystemApplication.main(SystemApplication.java:14)
+	at com.course.SystemApplication.main(SystemApplication.java:14)
 2020-07-29 17:37:26.102 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
@@ -1164,7 +1164,7 @@ com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Con
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.course.system.SystemApplication.main(SystemApplication.java:14)
+	at com.course.SystemApplication.main(SystemApplication.java:14)
 Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at java.net.PlainSocketImpl.socketConnect(Native Method)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
@@ -1241,7 +1241,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.course.system.SystemApplication.main(SystemApplication.java:14)
+	at com.course.SystemApplication.main(SystemApplication.java:14)
 2020-07-29 17:39:54.684 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
@@ -3107,7 +3107,7 @@ com.netflix.discovery.shared.transport.TransportException: There is no known eur
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.course.system.SystemApplication.main(SystemApplication.java:16)
+	at com.course.SystemApplication.main(SystemApplication.java:16)
 2020-07-29 17:45:19.441 ERROR com.netflix.discovery.DiscoveryClient             :990  [32m        [0;39m DiscoveryClient_SYSTEM/192.168.1.4:system:9001 - was unable to refresh its cache! status = There is no known eureka server; cluster server list is empty
 com.netflix.discovery.shared.transport.TransportException: There is no known eureka server; cluster server list is empty
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:108)
@@ -3227,7 +3227,7 @@ com.netflix.discovery.shared.transport.TransportException: There is no known eur
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.course.system.SystemApplication.main(SystemApplication.java:16)
+	at com.course.SystemApplication.main(SystemApplication.java:16)
 2020-07-29 17:46:02.124 ERROR com.netflix.discovery.DiscoveryClient             :878  [32m        [0;39m DiscoveryClient_SYSTEM/192.168.1.4:system:9001 - was unable to send heartbeat!
 com.netflix.discovery.shared.transport.TransportException: There is no known eureka server; cluster server list is empty
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:108)
@@ -3348,7 +3348,7 @@ com.netflix.discovery.shared.transport.TransportException: There is no known eur
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.course.system.SystemApplication.main(SystemApplication.java:16)
+	at com.course.SystemApplication.main(SystemApplication.java:16)
 2020-07-29 17:47:21.100 ERROR com.netflix.discovery.DiscoveryClient             :878  [32m        [0;39m DiscoveryClient_SYSTEM/192.168.1.4:system:9001 - was unable to send heartbeat!
 com.netflix.discovery.shared.transport.TransportException: There is no known eureka server; cluster server list is empty
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:108)
@@ -3528,7 +3528,7 @@ com.netflix.discovery.shared.transport.TransportException: There is no known eur
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.course.system.SystemApplication.main(SystemApplication.java:16)
+	at com.course.SystemApplication.main(SystemApplication.java:16)
 2020-07-29 17:49:31.450 ERROR com.netflix.discovery.DiscoveryClient             :990  [32m        [0;39m DiscoveryClient_SYSTEM/192.168.1.4:system:9001 - was unable to refresh its cache! status = There is no known eureka server; cluster server list is empty
 com.netflix.discovery.shared.transport.TransportException: There is no known eureka server; cluster server list is empty
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:108)
@@ -3799,7 +3799,7 @@ com.netflix.discovery.shared.transport.TransportException: There is no known eur
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.course.system.SystemApplication.main(SystemApplication.java:16)
+	at com.course.SystemApplication.main(SystemApplication.java:16)
 2020-07-29 17:53:28.832 ERROR com.netflix.discovery.DiscoveryClient             :878  [32m        [0;39m DiscoveryClient_SYSTEM/192.168.1.4:system:9001 - was unable to send heartbeat!
 com.netflix.discovery.shared.transport.TransportException: There is no known eureka server; cluster server list is empty
 	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:108)

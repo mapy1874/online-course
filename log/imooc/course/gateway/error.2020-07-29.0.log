@@ -442,7 +442,7 @@ com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Con
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.course.system.SystemApplication.main(SystemApplication.java:16)
+	at com.course.SystemApplication.main(SystemApplication.java:16)
 Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at java.net.PlainSocketImpl.socketConnect(Native Method)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
@@ -519,7 +519,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.course.system.SystemApplication.main(SystemApplication.java:16)
+	at com.course.SystemApplication.main(SystemApplication.java:16)
 2020-07-29 20:10:41.662 ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :83   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}
 com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)

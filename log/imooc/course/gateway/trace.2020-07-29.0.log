@@ -1,5 +1,5 @@
 2020-07-29 19:06:40.314 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-07-29 19:06:40.427 INFO  com.course.system.SystemApplication               :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-07-29 19:06:40.427 INFO  com.course.SystemApplication               :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2020-07-29 19:06:40.920 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=b1b581e8-1532-3996-b62a-88c08f9143cb
 2020-07-29 19:06:40.988 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2020-07-29 19:06:41.132 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
@@ -40,9 +40,9 @@
 2020-07-29 19:06:42.758 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/192.168.1.4:system:9001 - registration status: 204
 2020-07-29 19:06:42.768 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path ''
 2020-07-29 19:06:42.769 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
-2020-07-29 19:06:42.773 INFO  com.course.system.SystemApplication               :61   [32m        [0;39m Started SystemApplication in 2.998 seconds (JVM running for 3.672)
-2020-07-29 19:06:42.774 INFO  com.course.system.SystemApplication               :17   [32m        [0;39m Start successfully!!
-2020-07-29 19:06:42.774 INFO  com.course.system.SystemApplication               :18   [32m        [0;39m System address: 	http://127.0.0.1:9001
+2020-07-29 19:06:42.773 INFO  com.course.SystemApplication               :61   [32m        [0;39m Started SystemApplication in 2.998 seconds (JVM running for 3.672)
+2020-07-29 19:06:42.774 INFO  com.course.SystemApplication               :17   [32m        [0;39m Start successfully!!
+2020-07-29 19:06:42.774 INFO  com.course.SystemApplication               :18   [32m        [0;39m System address: 	http://127.0.0.1:9001
 2020-07-29 19:06:52.986 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-29 19:06:52.986 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
 2020-07-29 19:06:52.990 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 3 ms
@@ -56,7 +56,7 @@
 2020-07-29 19:08:26.076 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_SYSTEM/192.168.1.4:system:9001 - deregister  status: 200
 2020-07-29 19:08:26.087 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
 2020-07-29 19:08:30.386 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-07-29 19:08:30.476 INFO  com.course.system.SystemApplication               :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-07-29 19:08:30.476 INFO  com.course.SystemApplication               :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2020-07-29 19:08:30.998 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=b1b581e8-1532-3996-b62a-88c08f9143cb
 2020-07-29 19:08:31.075 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2020-07-29 19:08:31.221 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
@@ -97,9 +97,9 @@
 2020-07-29 19:08:32.301 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_SYSTEM/192.168.1.4:system:9001 - registration status: 204
 2020-07-29 19:08:32.310 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
 2020-07-29 19:08:32.311 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
-2020-07-29 19:08:32.315 INFO  com.course.system.SystemApplication               :61   [32m        [0;39m Started SystemApplication in 2.514 seconds (JVM running for 3.158)
-2020-07-29 19:08:32.316 INFO  com.course.system.SystemApplication               :17   [32m        [0;39m Start successfully!!
-2020-07-29 19:08:32.316 INFO  com.course.system.SystemApplication               :18   [32m        [0;39m System address: 	http://127.0.0.1:9001
+2020-07-29 19:08:32.315 INFO  com.course.SystemApplication               :61   [32m        [0;39m Started SystemApplication in 2.514 seconds (JVM running for 3.158)
+2020-07-29 19:08:32.316 INFO  com.course.SystemApplication               :17   [32m        [0;39m Start successfully!!
+2020-07-29 19:08:32.316 INFO  com.course.SystemApplication               :18   [32m        [0;39m System address: 	http://127.0.0.1:9001
 2020-07-29 19:09:00.683 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-29 19:09:00.683 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
 2020-07-29 19:09:00.688 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 5 ms
@@ -521,7 +521,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:948)
 2020-07-29 19:14:40.318 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
 2020-07-29 20:10:39.755 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-07-29 20:10:39.848 INFO  com.course.system.SystemApplication               :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-07-29 20:10:39.848 INFO  com.course.SystemApplication               :651  [32m        [0;39m No active profile set, falling back to default profiles: default
 2020-07-29 20:10:40.388 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=b1b581e8-1532-3996-b62a-88c08f9143cb
 2020-07-29 20:10:40.458 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2020-07-29 20:10:40.632 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
@@ -626,7 +626,7 @@ com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Con
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.course.system.SystemApplication.main(SystemApplication.java:16)
+	at com.course.SystemApplication.main(SystemApplication.java:16)
 Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at java.net.PlainSocketImpl.socketConnect(Native Method)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
@@ -704,7 +704,7 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.course.system.SystemApplication.main(SystemApplication.java:16)
+	at com.course.SystemApplication.main(SystemApplication.java:16)
 2020-07-29 20:10:41.645 WARN  com.netflix.discovery.DiscoveryClient             :297  [32m        [0;39m Using default backup registry implementation which does not do anything.
 2020-07-29 20:10:41.646 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
 2020-07-29 20:10:41.647 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
@@ -801,9 +801,9 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2020-07-29 20:10:41.664 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
 2020-07-29 20:10:41.689 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
 2020-07-29 20:10:41.690 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9001
-2020-07-29 20:10:41.693 INFO  com.course.system.SystemApplication               :61   [32m        [0;39m Started SystemApplication in 2.499 seconds (JVM running for 3.157)
-2020-07-29 20:10:41.694 INFO  com.course.system.SystemApplication               :17   [32m        [0;39m Start successfully!!
-2020-07-29 20:10:41.694 INFO  com.course.system.SystemApplication               :18   [32m        [0;39m System address: 	http://127.0.0.1:9001
+2020-07-29 20:10:41.693 INFO  com.course.SystemApplication               :61   [32m        [0;39m Started SystemApplication in 2.499 seconds (JVM running for 3.157)
+2020-07-29 20:10:41.694 INFO  com.course.SystemApplication               :17   [32m        [0;39m Start successfully!!
+2020-07-29 20:10:41.694 INFO  com.course.SystemApplication               :18   [32m        [0;39m System address: 	http://127.0.0.1:9001
 2020-07-29 20:10:58.739 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-29 20:10:58.739 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
 2020-07-29 20:10:58.744 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 5 ms
