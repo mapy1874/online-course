@@ -16,7 +16,7 @@
           <a href="index.html" class="navbar-brand">
             <small>
               <i class="fa fa-leaf"></i>
-              Ace Admin
+              Online Course Platform
             </small>
           </a>
         </div>
