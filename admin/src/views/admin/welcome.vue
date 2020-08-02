@@ -5,3 +5,13 @@
     </h1>
   </div>
 </template>
+
+
+<script>
+  export default {
+    name: 'welcome',
+    mounted() {
+      this.$parent.activeSidebar("welcome-sidebar");
+    },
+  }
+</script>
