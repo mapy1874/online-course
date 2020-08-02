@@ -8,7 +8,7 @@ import Chapter from "./views/admin/chapter.vue"
 Vue.use(Router);
 
 export default new Router({
-    made: 'history',
+    mode: 'history',
     base: process.env.BASE_URL,
     routes:[{
         path:'*',
