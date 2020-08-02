@@ -1309,3 +1309,5 @@ Caused by: java.lang.ClassNotFoundException: com.course.server.service.ChapterSe
 2020-08-01 21:05:22.147 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000000, 00000000, test chapter 1
 2020-08-01 21:05:22.148 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000001, 00000000, test chapter 2
 2020-08-01 21:05:22.149 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 2
+2020-08-01 21:10:21.192 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-01 21:15:21.198 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
