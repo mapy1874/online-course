@@ -97,13 +97,13 @@
               <div class="form-group">
                 <label class="col-sm-2 control-label">Name</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Name">
+                  <input v-model="chapter.name" type="text" class="form-control" placeholder="Name">
                 </div>
               </div>
               <div class="form-group">
                 <label class="col-sm-2 control-label">Course ID</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" placeholder="Course ID">
+                  <input v-model="chapter.courseId" type="text" class="form-control" placeholder="Course ID">
                 </div>
               </div>
 
@@ -111,7 +111,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            <button type="button" class="btn btn-primary">Save</button>
+            <button @click="save()" type="button" class="btn btn-primary">Save</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -127,7 +127,8 @@
     components: {Pagination},
     data: function() {
       return {
-        chapters: []
+        chapter: {},
+        chapters: [],
       }
     },
     mounted: function() {
@@ -144,6 +145,13 @@
         }).then(response => {
           _this.chapters = response.data.list;
           _this.$refs.pagination.render(page, response.data.total);
+        })
+      },
+
+      save() {
+        let _this = this;
+        _this.$ajax.post('http://127.0.0.1:9000/business/admin/chapter/save', _this.chapter).then(response => {
+          console.log("save chapter result: ", response);
         })
       },
 
