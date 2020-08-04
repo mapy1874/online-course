@@ -1,6 +1,11 @@
 <template>
   <div>
     <p>
+      <button @click="add()" class="btn btn-white btn-default btn-round">
+        <i class="ace-icon fa fa-edit"></i>
+        Create
+      </button>
+      &nbsp;
       <button @click="list(1)" class="btn btn-white btn-default btn-round">
         <i class="ace-icon fa fa-refresh"></i>
         Refresh
@@ -79,6 +84,39 @@
 
       </tbody>
     </table>
+
+    <div class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Form</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">Course ID</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Course ID">
+                </div>
+              </div>
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Save</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
   </div>
 </template>
 
@@ -107,7 +145,12 @@
           _this.chapters = response.data.list;
           _this.$refs.pagination.render(page, response.data.total);
         })
-      }
+      },
+
+      add() {
+        // let _this = this;
+        $(".modal").modal("show");
+      },
     }
   }
 </script>
