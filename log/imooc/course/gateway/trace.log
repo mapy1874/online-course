@@ -4884,3 +4884,700 @@ Caused by: java.lang.ClassNotFoundException: com.course.server.service.ChapterSe
 2020-08-03 21:10:50.341 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
 2020-08-03 21:10:50.341 INFO  com.course.business.config.BusinessApplication    :21   [32m        [0;39m Start successfully!!
 2020-08-03 21:10:50.341 INFO  com.course.business.config.BusinessApplication    :22   [32m        [0;39m Business address: 	http://127.0.0.1:9002
+2020-08-03 21:15:50.345 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-03 21:20:50.362 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-03 21:42:51.388 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-03 21:47:51.419 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-03 21:49:53.260 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2020-08-03 21:49:53.264 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1596505793264, current=DOWN, previous=UP]
+2020-08-03 21:49:53.268 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002: registering service...
+2020-08-03 21:49:53.300 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-03 21:49:53.305 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2020-08-03 21:49:53.313 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002 - registration status: 204
+2020-08-03 21:49:53.315 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2020-08-03 21:49:53.325 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002 - deregister  status: 200
+2020-08-03 21:49:53.334 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2020-08-03 21:49:56.875 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 21:49:56.902 INFO  com.course.business.config.BusinessApplication    :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-08-03 21:49:57.169 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=b32e1f8f-eeee-3341-990f-aaed7760d99e
+2020-08-03 21:49:57.184 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 21:49:57.187 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 21:49:57.209 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2020-08-03 21:49:57.238 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-08-03 21:49:57.238 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-08-03 21:49:57.239 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-08-03 21:49:57.239 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-08-03 21:49:57.245 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-08-03 21:49:57.245 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 340 ms
+2020-08-03 21:49:57.298 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-08-03 21:49:57.298 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-03 21:49:57.345 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-03 21:49:57.422 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m        [0;39m Unable to start LiveReload server
+2020-08-03 21:49:57.465 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-08-03 21:49:57.476 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-08-03 21:49:57.501 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-08-03 21:49:57.504 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-08-03 21:49:57.507 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-08-03 21:49:57.507 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-08-03 21:49:57.507 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-08-03 21:49:57.507 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-08-03 21:49:57.598 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-03 21:49:57.599 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2020-08-03 21:49:57.599 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2020-08-03 21:49:57.599 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2020-08-03 21:49:57.599 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2020-08-03 21:49:57.599 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2020-08-03 21:49:57.599 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2020-08-03 21:49:57.599 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-08-03 21:49:57.603 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2020-08-03 21:49:57.604 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-08-03 21:49:57.605 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-03 21:49:57.606 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1596505797606 with initial instances count: 3
+2020-08-03 21:49:57.608 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-08-03 21:49:57.608 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1596505797608, current=UP, previous=STARTING]
+2020-08-03 21:49:57.608 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002: registering service...
+2020-08-03 21:49:57.614 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002 - registration status: 204
+2020-08-03 21:49:57.618 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-08-03 21:49:57.620 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-08-03 21:49:57.620 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-08-03 21:49:57.624 INFO  com.course.business.config.BusinessApplication    :61   [32m        [0;39m Started BusinessApplication in 1.753 seconds (JVM running for 20574.531)
+2020-08-03 21:49:57.626 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2020-08-03 21:49:57.626 INFO  com.course.business.config.BusinessApplication    :21   [32m        [0;39m Start successfully!!
+2020-08-03 21:49:57.626 INFO  com.course.business.config.BusinessApplication    :22   [32m        [0;39m Business address: 	http://127.0.0.1:9002
+2020-08-03 21:50:41.646 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2020-08-03 21:50:41.647 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1596505841647, current=DOWN, previous=UP]
+2020-08-03 21:50:41.647 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002: registering service...
+2020-08-03 21:50:41.648 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-03 21:50:41.650 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2020-08-03 21:50:41.653 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002 - registration status: 204
+2020-08-03 21:50:41.653 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2020-08-03 21:50:41.658 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002 - deregister  status: 200
+2020-08-03 21:50:41.662 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2020-08-03 21:50:43.860 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 21:50:43.880 INFO  com.course.business.config.BusinessApplication    :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-08-03 21:50:44.037 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=b32e1f8f-eeee-3341-990f-aaed7760d99e
+2020-08-03 21:50:44.048 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 21:50:44.050 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 21:50:44.068 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2020-08-03 21:50:44.089 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-08-03 21:50:44.090 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-08-03 21:50:44.090 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-08-03 21:50:44.090 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-08-03 21:50:44.096 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-08-03 21:50:44.096 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 215 ms
+2020-08-03 21:50:44.137 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-08-03 21:50:44.137 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-03 21:50:44.172 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-03 21:50:44.229 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m        [0;39m Unable to start LiveReload server
+2020-08-03 21:50:44.264 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-08-03 21:50:44.271 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-08-03 21:50:44.286 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-08-03 21:50:44.288 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-08-03 21:50:44.289 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-08-03 21:50:44.289 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-08-03 21:50:44.289 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-08-03 21:50:44.290 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-08-03 21:50:44.335 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-03 21:50:44.335 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2020-08-03 21:50:44.335 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2020-08-03 21:50:44.336 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2020-08-03 21:50:44.336 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2020-08-03 21:50:44.336 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2020-08-03 21:50:44.336 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2020-08-03 21:50:44.336 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-08-03 21:50:44.338 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2020-08-03 21:50:44.339 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-08-03 21:50:44.339 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-03 21:50:44.340 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1596505844340 with initial instances count: 3
+2020-08-03 21:50:44.342 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-08-03 21:50:44.343 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1596505844342, current=UP, previous=STARTING]
+2020-08-03 21:50:44.343 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002: registering service...
+2020-08-03 21:50:44.349 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-08-03 21:50:44.351 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-08-03 21:50:44.351 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-08-03 21:50:44.352 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002 - registration status: 204
+2020-08-03 21:50:44.354 INFO  com.course.business.config.BusinessApplication    :61   [32m        [0;39m Started BusinessApplication in 0.53 seconds (JVM running for 20621.26)
+2020-08-03 21:50:44.356 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2020-08-03 21:50:44.356 INFO  com.course.business.config.BusinessApplication    :21   [32m        [0;39m Start successfully!!
+2020-08-03 21:50:44.356 INFO  com.course.business.config.BusinessApplication    :22   [32m        [0;39m Business address: 	http://127.0.0.1:9002
+2020-08-03 21:51:18.883 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2020-08-03 21:51:18.883 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1596505878883, current=DOWN, previous=UP]
+2020-08-03 21:51:18.884 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002: registering service...
+2020-08-03 21:51:18.885 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-03 21:51:18.886 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2020-08-03 21:51:18.891 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002 - registration status: 204
+2020-08-03 21:51:18.892 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2020-08-03 21:51:18.899 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002 - deregister  status: 200
+2020-08-03 21:51:18.903 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2020-08-03 21:51:21.139 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 21:51:21.158 INFO  com.course.business.config.BusinessApplication    :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-08-03 21:51:21.312 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=b32e1f8f-eeee-3341-990f-aaed7760d99e
+2020-08-03 21:51:21.321 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 21:51:21.323 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 21:51:21.343 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2020-08-03 21:51:21.367 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-08-03 21:51:21.368 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-08-03 21:51:21.368 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-08-03 21:51:21.368 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-08-03 21:51:21.375 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-08-03 21:51:21.376 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 216 ms
+2020-08-03 21:51:21.434 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-08-03 21:51:21.434 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-03 21:51:21.485 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-03 21:51:21.557 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m        [0;39m Unable to start LiveReload server
+2020-08-03 21:51:21.598 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-08-03 21:51:21.604 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-08-03 21:51:21.620 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-08-03 21:51:21.621 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-08-03 21:51:21.623 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-08-03 21:51:21.623 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-08-03 21:51:21.623 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-08-03 21:51:21.623 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-08-03 21:51:21.665 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-03 21:51:21.665 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2020-08-03 21:51:21.665 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2020-08-03 21:51:21.666 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2020-08-03 21:51:21.666 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2020-08-03 21:51:21.666 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2020-08-03 21:51:21.666 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2020-08-03 21:51:21.666 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-08-03 21:51:21.669 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2020-08-03 21:51:21.670 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-08-03 21:51:21.671 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-03 21:51:21.672 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1596505881672 with initial instances count: 3
+2020-08-03 21:51:21.673 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-08-03 21:51:21.673 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1596505881673, current=UP, previous=STARTING]
+2020-08-03 21:51:21.673 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002: registering service...
+2020-08-03 21:51:21.679 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-08-03 21:51:21.680 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002 - registration status: 204
+2020-08-03 21:51:21.682 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-08-03 21:51:21.683 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-08-03 21:51:21.685 INFO  com.course.business.config.BusinessApplication    :61   [32m        [0;39m Started BusinessApplication in 0.581 seconds (JVM running for 20658.59)
+2020-08-03 21:51:21.687 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2020-08-03 21:51:21.687 INFO  com.course.business.config.BusinessApplication    :21   [32m        [0;39m Start successfully!!
+2020-08-03 21:51:21.687 INFO  com.course.business.config.BusinessApplication    :22   [32m        [0;39m Business address: 	http://127.0.0.1:9002
+2020-08-03 21:51:59.261 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2020-08-03 21:51:59.261 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1596505919261, current=DOWN, previous=UP]
+2020-08-03 21:51:59.261 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002: registering service...
+2020-08-03 21:51:59.262 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-03 21:51:59.262 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2020-08-03 21:51:59.268 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002 - registration status: 204
+2020-08-03 21:51:59.268 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2020-08-03 21:51:59.272 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002 - deregister  status: 200
+2020-08-03 21:51:59.274 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2020-08-03 21:52:01.478 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 21:52:01.495 INFO  com.course.business.config.BusinessApplication    :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-08-03 21:52:01.646 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=b32e1f8f-eeee-3341-990f-aaed7760d99e
+2020-08-03 21:52:01.656 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 21:52:01.658 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 21:52:01.675 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2020-08-03 21:52:01.693 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-08-03 21:52:01.693 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-08-03 21:52:01.693 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-08-03 21:52:01.693 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-08-03 21:52:01.698 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-08-03 21:52:01.698 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 202 ms
+2020-08-03 21:52:01.732 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-08-03 21:52:01.732 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-03 21:52:01.764 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-03 21:52:01.815 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m        [0;39m Unable to start LiveReload server
+2020-08-03 21:52:01.845 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-08-03 21:52:01.851 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-08-03 21:52:01.863 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-08-03 21:52:01.864 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-08-03 21:52:01.865 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-08-03 21:52:01.866 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-08-03 21:52:01.866 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-08-03 21:52:01.866 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-08-03 21:52:01.902 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-03 21:52:01.903 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2020-08-03 21:52:01.903 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2020-08-03 21:52:01.903 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2020-08-03 21:52:01.903 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2020-08-03 21:52:01.903 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2020-08-03 21:52:01.904 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2020-08-03 21:52:01.904 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-08-03 21:52:01.906 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2020-08-03 21:52:01.907 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-08-03 21:52:01.907 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-03 21:52:01.908 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1596505921908 with initial instances count: 3
+2020-08-03 21:52:01.908 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-08-03 21:52:01.909 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1596505921909, current=UP, previous=STARTING]
+2020-08-03 21:52:01.909 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002: registering service...
+2020-08-03 21:52:01.915 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-08-03 21:52:01.917 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-08-03 21:52:01.917 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-08-03 21:52:01.917 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002 - registration status: 204
+2020-08-03 21:52:01.919 INFO  com.course.business.config.BusinessApplication    :61   [32m        [0;39m Started BusinessApplication in 0.471 seconds (JVM running for 20698.823)
+2020-08-03 21:52:01.921 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2020-08-03 21:52:01.921 INFO  com.course.business.config.BusinessApplication    :21   [32m        [0;39m Start successfully!!
+2020-08-03 21:52:01.922 INFO  com.course.business.config.BusinessApplication    :22   [32m        [0;39m Business address: 	http://127.0.0.1:9002
+2020-08-03 21:52:38.952 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2020-08-03 21:52:38.952 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1596505958952, current=DOWN, previous=UP]
+2020-08-03 21:52:38.952 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002: registering service...
+2020-08-03 21:52:38.954 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-03 21:52:38.954 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2020-08-03 21:52:38.963 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002 - registration status: 204
+2020-08-03 21:52:38.980 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2020-08-03 21:52:38.983 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002 - deregister  status: 200
+2020-08-03 21:52:38.987 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2020-08-03 21:52:41.295 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 21:52:41.324 INFO  com.course.business.config.BusinessApplication    :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-08-03 21:52:41.483 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=b32e1f8f-eeee-3341-990f-aaed7760d99e
+2020-08-03 21:52:41.492 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 21:52:41.494 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 21:52:41.513 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2020-08-03 21:52:41.533 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-08-03 21:52:41.533 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-08-03 21:52:41.533 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-08-03 21:52:41.534 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-08-03 21:52:41.539 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-08-03 21:52:41.539 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 213 ms
+2020-08-03 21:52:41.576 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-08-03 21:52:41.576 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-03 21:52:41.605 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-03 21:52:41.659 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m        [0;39m Unable to start LiveReload server
+2020-08-03 21:52:41.689 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-08-03 21:52:41.694 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-08-03 21:52:41.706 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-08-03 21:52:41.707 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-08-03 21:52:41.709 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-08-03 21:52:41.710 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-08-03 21:52:41.710 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-08-03 21:52:41.710 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-08-03 21:52:41.746 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-03 21:52:41.746 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2020-08-03 21:52:41.746 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2020-08-03 21:52:41.746 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2020-08-03 21:52:41.746 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2020-08-03 21:52:41.747 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2020-08-03 21:52:41.747 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2020-08-03 21:52:41.747 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-08-03 21:52:41.750 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2020-08-03 21:52:41.750 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-08-03 21:52:41.750 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-03 21:52:41.751 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1596505961751 with initial instances count: 2
+2020-08-03 21:52:41.752 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-08-03 21:52:41.752 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1596505961752, current=UP, previous=STARTING]
+2020-08-03 21:52:41.752 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002: registering service...
+2020-08-03 21:52:41.757 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-08-03 21:52:41.758 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-08-03 21:52:41.758 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-08-03 21:52:41.759 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002 - registration status: 204
+2020-08-03 21:52:41.760 INFO  com.course.business.config.BusinessApplication    :61   [32m        [0;39m Started BusinessApplication in 0.528 seconds (JVM running for 20738.663)
+2020-08-03 21:52:41.762 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2020-08-03 21:52:41.762 INFO  com.course.business.config.BusinessApplication    :21   [32m        [0;39m Start successfully!!
+2020-08-03 21:52:41.762 INFO  com.course.business.config.BusinessApplication    :22   [32m        [0;39m Business address: 	http://127.0.0.1:9002
+2020-08-03 21:53:05.269 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2020-08-03 21:53:05.269 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1596505985269, current=DOWN, previous=UP]
+2020-08-03 21:53:05.269 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002: registering service...
+2020-08-03 21:53:05.270 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-03 21:53:05.271 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2020-08-03 21:53:05.273 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002 - registration status: 204
+2020-08-03 21:53:05.274 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2020-08-03 21:53:05.280 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002 - deregister  status: 200
+2020-08-03 21:53:05.284 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2020-08-03 21:53:07.494 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 21:53:07.512 INFO  com.course.business.config.BusinessApplication    :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-08-03 21:53:07.674 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=b32e1f8f-eeee-3341-990f-aaed7760d99e
+2020-08-03 21:53:07.685 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 21:53:07.687 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 21:53:07.706 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2020-08-03 21:53:07.729 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-08-03 21:53:07.729 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-08-03 21:53:07.730 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-08-03 21:53:07.730 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-08-03 21:53:07.736 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-08-03 21:53:07.736 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 222 ms
+2020-08-03 21:53:07.780 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-08-03 21:53:07.780 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-03 21:53:07.821 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-03 21:53:07.886 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m        [0;39m Unable to start LiveReload server
+2020-08-03 21:53:07.922 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-08-03 21:53:07.928 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-08-03 21:53:07.941 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-08-03 21:53:07.942 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-08-03 21:53:07.943 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-08-03 21:53:07.944 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-08-03 21:53:07.944 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-08-03 21:53:07.944 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-08-03 21:53:07.981 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-03 21:53:07.981 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2020-08-03 21:53:07.981 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2020-08-03 21:53:07.982 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2020-08-03 21:53:07.982 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2020-08-03 21:53:07.982 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2020-08-03 21:53:07.982 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2020-08-03 21:53:07.982 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-08-03 21:53:07.985 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2020-08-03 21:53:07.985 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-08-03 21:53:07.985 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-03 21:53:07.986 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1596505987986 with initial instances count: 2
+2020-08-03 21:53:07.986 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-08-03 21:53:07.987 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1596505987987, current=UP, previous=STARTING]
+2020-08-03 21:53:07.987 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002: registering service...
+2020-08-03 21:53:07.991 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-08-03 21:53:07.992 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.4:business:9002 - registration status: 204
+2020-08-03 21:53:07.994 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-08-03 21:53:07.994 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-08-03 21:53:07.996 INFO  com.course.business.config.BusinessApplication    :61   [32m        [0;39m Started BusinessApplication in 0.533 seconds (JVM running for 20764.898)
+2020-08-03 21:53:07.997 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2020-08-03 21:53:07.997 INFO  com.course.business.config.BusinessApplication    :21   [32m        [0;39m Start successfully!!
+2020-08-03 21:53:07.998 INFO  com.course.business.config.BusinessApplication    :22   [32m        [0;39m Business address: 	http://127.0.0.1:9002
+2020-08-03 21:53:59.980 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-03 21:53:59.981 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-08-03 21:53:59.988 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 7 ms
+2020-08-03 21:53:59.998 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 1
+2020-08-03 21:54:00.010 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m        [0;39m HikariPool-9 - Starting...
+2020-08-03 21:54:00.028 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m        [0;39m HikariPool-9 - Start completed.
+2020-08-03 21:54:00.030 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:54:00.030 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:54:00.032 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:54:00.033 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 25
+2020-08-03 21:54:00.033 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:54:00.035 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
+2020-08-03 21:54:00.038 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-08-03 21:54:00.039 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:54:00.040 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000001, 00000000, test chapter 01
+2020-08-03 21:54:00.040 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000002, 00000000, test chapter 02
+2020-08-03 21:54:00.041 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000003, 00000000, test chapter 03
+2020-08-03 21:54:00.043 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000004, 00000000, test chapter 04
+2020-08-03 21:54:00.044 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000005, 00000000, test chapter 05
+2020-08-03 21:54:00.044 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:54:10.666 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 1
+2020-08-03 21:54:10.670 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:54:10.671 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:54:10.672 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:54:10.672 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 25
+2020-08-03 21:54:10.672 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:54:10.673 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
+2020-08-03 21:54:10.673 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-08-03 21:54:10.674 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:54:10.674 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000001, 00000000, test chapter 01
+2020-08-03 21:54:10.675 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000002, 00000000, test chapter 02
+2020-08-03 21:54:10.675 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000003, 00000000, test chapter 03
+2020-08-03 21:54:10.676 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000004, 00000000, test chapter 04
+2020-08-03 21:54:10.676 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000005, 00000000, test chapter 05
+2020-08-03 21:54:10.676 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:54:54.846 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 1
+2020-08-03 21:54:54.848 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:54:54.848 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:54:54.850 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:54:54.850 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 25
+2020-08-03 21:54:54.850 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:54:54.851 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
+2020-08-03 21:54:54.851 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-08-03 21:54:54.851 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:54:54.851 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000001, 00000000, test chapter 01
+2020-08-03 21:54:54.852 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000002, 00000000, test chapter 02
+2020-08-03 21:54:54.853 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000003, 00000000, test chapter 03
+2020-08-03 21:54:54.853 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000004, 00000000, test chapter 04
+2020-08-03 21:54:54.853 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000005, 00000000, test chapter 05
+2020-08-03 21:54:54.853 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:54:54.881 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 1
+2020-08-03 21:54:54.882 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:54:54.882 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:54:54.882 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:54:54.883 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 25
+2020-08-03 21:54:54.883 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:54:54.884 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
+2020-08-03 21:54:54.884 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-08-03 21:54:54.885 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:54:54.885 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000001, 00000000, test chapter 01
+2020-08-03 21:54:54.888 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000002, 00000000, test chapter 02
+2020-08-03 21:54:54.888 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000003, 00000000, test chapter 03
+2020-08-03 21:54:54.888 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000004, 00000000, test chapter 04
+2020-08-03 21:54:54.888 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000005, 00000000, test chapter 05
+2020-08-03 21:54:54.889 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:55:03.362 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 1
+2020-08-03 21:55:03.364 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:55:03.364 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:55:03.365 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:55:03.365 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 25
+2020-08-03 21:55:03.365 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:55:03.366 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
+2020-08-03 21:55:03.366 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-08-03 21:55:03.367 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:55:03.368 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000001, 00000000, test chapter 01
+2020-08-03 21:55:03.368 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000002, 00000000, test chapter 02
+2020-08-03 21:55:03.368 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000003, 00000000, test chapter 03
+2020-08-03 21:55:03.369 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000004, 00000000, test chapter 04
+2020-08-03 21:55:03.369 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000005, 00000000, test chapter 05
+2020-08-03 21:55:03.369 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:55:15.497 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 1
+2020-08-03 21:55:15.499 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:55:15.499 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:55:15.500 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:55:15.500 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 25
+2020-08-03 21:55:15.500 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:55:15.501 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
+2020-08-03 21:55:15.501 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-08-03 21:55:15.502 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:55:15.502 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000001, 00000000, test chapter 01
+2020-08-03 21:55:15.503 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000002, 00000000, test chapter 02
+2020-08-03 21:55:15.503 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000003, 00000000, test chapter 03
+2020-08-03 21:55:15.504 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000004, 00000000, test chapter 04
+2020-08-03 21:55:15.504 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000005, 00000000, test chapter 05
+2020-08-03 21:55:15.505 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:55:26.609 INFO  c.c.business.controller.admin.ChapterController   :36   [32m        [0;39m chapterDto: ChapterDto [Hash = 1425745580, id=null, courseId=13, name=abcdd]
+2020-08-03 21:55:26.615 DEBUG com.course.server.mapper.ChapterMapper.insert     :159  [32m        [0;39m ==>  Preparing: insert into chapter (id, course_id, name) values (?, ?, ?) 
+2020-08-03 21:55:26.617 DEBUG com.course.server.mapper.ChapterMapper.insert     :159  [32m        [0;39m ==> Parameters: iRgwoPVi(String), 13(String), abcdd(String)
+2020-08-03 21:55:26.623 DEBUG com.course.server.mapper.ChapterMapper.insert     :159  [32m        [0;39m <==    Updates: 1
+2020-08-03 21:55:26.645 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 1
+2020-08-03 21:55:26.646 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:55:26.646 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:55:26.648 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:55:26.648 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 26
+2020-08-03 21:55:26.649 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:55:26.649 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
+2020-08-03 21:55:26.649 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-08-03 21:55:26.651 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:55:26.651 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000001, 00000000, test chapter 01
+2020-08-03 21:55:26.651 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000002, 00000000, test chapter 02
+2020-08-03 21:55:26.651 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000003, 00000000, test chapter 03
+2020-08-03 21:55:26.652 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000004, 00000000, test chapter 04
+2020-08-03 21:55:26.652 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000005, 00000000, test chapter 05
+2020-08-03 21:55:26.652 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:55:47.425 INFO  c.c.business.controller.admin.ChapterController   :36   [32m        [0;39m chapterDto: ChapterDto [Hash = 502665700, id=null, courseId=2434553, name=gdsfdg]
+2020-08-03 21:55:47.426 DEBUG com.course.server.mapper.ChapterMapper.insert     :159  [32m        [0;39m ==>  Preparing: insert into chapter (id, course_id, name) values (?, ?, ?) 
+2020-08-03 21:55:47.427 DEBUG com.course.server.mapper.ChapterMapper.insert     :159  [32m        [0;39m ==> Parameters: QLvGwzSr(String), 2434553(String), gdsfdg(String)
+2020-08-03 21:55:47.427 DEBUG com.course.server.mapper.ChapterMapper.insert     :159  [32m        [0;39m <==    Updates: 1
+2020-08-03 21:55:47.455 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 1
+2020-08-03 21:55:47.456 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:55:47.457 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:55:47.457 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:55:47.458 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 27
+2020-08-03 21:55:47.458 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:55:47.459 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
+2020-08-03 21:55:47.460 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-08-03 21:55:47.460 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:55:47.460 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000001, 00000000, test chapter 01
+2020-08-03 21:55:47.461 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000002, 00000000, test chapter 02
+2020-08-03 21:55:47.461 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000003, 00000000, test chapter 03
+2020-08-03 21:55:47.461 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000004, 00000000, test chapter 04
+2020-08-03 21:55:47.461 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000005, 00000000, test chapter 05
+2020-08-03 21:55:47.461 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:55:49.809 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 6
+2020-08-03 21:55:49.810 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:55:49.811 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:55:49.811 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:55:49.811 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 27
+2020-08-03 21:55:49.812 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:55:49.812 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ?, ? 
+2020-08-03 21:55:49.813 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 25(Integer), 5(Integer)
+2020-08-03 21:55:49.813 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:55:49.813 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: QLvGwzSr, 2434553, gdsfdg
+2020-08-03 21:55:49.814 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: xZYQ4JRp, 24, eewrre
+2020-08-03 21:55:49.814 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 2
+2020-08-03 21:55:57.330 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 3
+2020-08-03 21:55:57.331 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:55:57.332 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:55:57.332 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:55:57.332 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 27
+2020-08-03 21:55:57.333 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:55:57.333 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ?, ? 
+2020-08-03 21:55:57.333 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 10(Integer), 5(Integer)
+2020-08-03 21:55:57.333 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:55:57.334 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000011, 00000000, test chapter 11
+2020-08-03 21:55:57.334 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000012, 00000000, test chapter 12
+2020-08-03 21:55:57.334 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000013, 00000000, test chapter 13
+2020-08-03 21:55:57.334 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000014, 00000000, test chapter 14
+2020-08-03 21:55:57.334 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000015, 00000000, test chapter 15
+2020-08-03 21:55:57.335 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:56:00.148 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 2
+2020-08-03 21:56:00.149 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:56:00.149 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:56:00.150 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:56:00.150 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 27
+2020-08-03 21:56:00.150 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:56:00.150 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ?, ? 
+2020-08-03 21:56:00.151 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer), 5(Integer)
+2020-08-03 21:56:00.151 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:56:00.151 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000006, 00000000, test chapter 06
+2020-08-03 21:56:00.152 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000007, 00000000, test chapter 07
+2020-08-03 21:56:00.152 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000008, 00000000, test chapter 08
+2020-08-03 21:56:00.152 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000009, 00000000, test chapter 09
+2020-08-03 21:56:00.152 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000010, 00000000, test chapter 10
+2020-08-03 21:56:00.152 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:56:00.661 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 1
+2020-08-03 21:56:00.662 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:56:00.662 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:56:00.663 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:56:00.663 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 27
+2020-08-03 21:56:00.663 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:56:00.664 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
+2020-08-03 21:56:00.664 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-08-03 21:56:00.664 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:56:00.665 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000001, 00000000, test chapter 01
+2020-08-03 21:56:00.665 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000002, 00000000, test chapter 02
+2020-08-03 21:56:00.665 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000003, 00000000, test chapter 03
+2020-08-03 21:56:00.665 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000004, 00000000, test chapter 04
+2020-08-03 21:56:00.665 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000005, 00000000, test chapter 05
+2020-08-03 21:56:00.665 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:56:01.321 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 4
+2020-08-03 21:56:01.322 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:56:01.322 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:56:01.323 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:56:01.323 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 27
+2020-08-03 21:56:01.323 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:56:01.323 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ?, ? 
+2020-08-03 21:56:01.324 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 15(Integer), 5(Integer)
+2020-08-03 21:56:01.324 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:56:01.324 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000016, 00000000, test chapter 16
+2020-08-03 21:56:01.324 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000017, 00000000, test chapter 17
+2020-08-03 21:56:01.325 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000018, 00000000, test chapter 18
+2020-08-03 21:56:01.325 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000019, 00000000, test chapter 19
+2020-08-03 21:56:01.325 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000020, 00000000, test chapter 20
+2020-08-03 21:56:01.325 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:56:02.555 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 5
+2020-08-03 21:56:02.556 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:56:02.557 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:56:02.557 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:56:02.557 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 27
+2020-08-03 21:56:02.558 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:56:02.558 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ?, ? 
+2020-08-03 21:56:02.558 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 20(Integer), 5(Integer)
+2020-08-03 21:56:02.559 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:56:02.559 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000021, 00000000, test chapter 21
+2020-08-03 21:56:02.559 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000022, 00000000, test chapter 22
+2020-08-03 21:56:02.559 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000023, 00000000, test chapter 23
+2020-08-03 21:56:02.559 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000024, 00000000, test chapter 24
+2020-08-03 21:56:02.560 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: iRgwoPVi, 13, abcdd
+2020-08-03 21:56:02.560 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:56:03.179 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 6
+2020-08-03 21:56:03.180 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:56:03.181 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:56:03.181 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:56:03.182 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 27
+2020-08-03 21:56:03.182 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:56:03.183 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ?, ? 
+2020-08-03 21:56:03.183 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 25(Integer), 5(Integer)
+2020-08-03 21:56:03.184 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:56:03.184 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: QLvGwzSr, 2434553, gdsfdg
+2020-08-03 21:56:03.185 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: xZYQ4JRp, 24, eewrre
+2020-08-03 21:56:03.185 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 2
+2020-08-03 21:56:04.507 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 5
+2020-08-03 21:56:04.508 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:56:04.508 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:56:04.508 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:56:04.509 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 27
+2020-08-03 21:56:04.509 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:56:04.509 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ?, ? 
+2020-08-03 21:56:04.509 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 20(Integer), 5(Integer)
+2020-08-03 21:56:04.510 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:56:04.510 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000021, 00000000, test chapter 21
+2020-08-03 21:56:04.510 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000022, 00000000, test chapter 22
+2020-08-03 21:56:04.510 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000023, 00000000, test chapter 23
+2020-08-03 21:56:04.511 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000024, 00000000, test chapter 24
+2020-08-03 21:56:04.511 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: iRgwoPVi, 13, abcdd
+2020-08-03 21:56:04.511 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:57:14.462 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 1
+2020-08-03 21:57:14.464 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:57:14.464 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:57:14.465 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:57:14.465 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 27
+2020-08-03 21:57:14.466 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:57:14.466 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
+2020-08-03 21:57:14.466 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-08-03 21:57:14.467 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:57:14.467 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000001, 00000000, test chapter 01
+2020-08-03 21:57:14.468 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000002, 00000000, test chapter 02
+2020-08-03 21:57:14.468 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000003, 00000000, test chapter 03
+2020-08-03 21:57:14.468 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000004, 00000000, test chapter 04
+2020-08-03 21:57:14.469 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000005, 00000000, test chapter 05
+2020-08-03 21:57:14.469 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:57:35.918 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 1
+2020-08-03 21:57:35.919 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:57:35.920 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:57:35.920 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:57:35.921 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 27
+2020-08-03 21:57:35.921 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:57:35.922 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
+2020-08-03 21:57:35.922 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-08-03 21:57:35.922 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:57:35.923 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000001, 00000000, test chapter 01
+2020-08-03 21:57:35.923 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000002, 00000000, test chapter 02
+2020-08-03 21:57:35.924 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000003, 00000000, test chapter 03
+2020-08-03 21:57:35.924 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000004, 00000000, test chapter 04
+2020-08-03 21:57:35.925 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000005, 00000000, test chapter 05
+2020-08-03 21:57:35.925 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:57:37.498 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 4
+2020-08-03 21:57:37.499 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:57:37.500 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:57:37.500 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:57:37.502 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 27
+2020-08-03 21:57:37.502 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:57:37.502 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ?, ? 
+2020-08-03 21:57:37.503 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 15(Integer), 5(Integer)
+2020-08-03 21:57:37.504 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:57:37.504 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000016, 00000000, test chapter 16
+2020-08-03 21:57:37.504 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000017, 00000000, test chapter 17
+2020-08-03 21:57:37.504 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000018, 00000000, test chapter 18
+2020-08-03 21:57:37.504 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000019, 00000000, test chapter 19
+2020-08-03 21:57:37.505 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000020, 00000000, test chapter 20
+2020-08-03 21:57:37.505 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:57:38.039 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 1
+2020-08-03 21:57:38.041 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:57:38.041 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:57:38.042 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:57:38.042 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 27
+2020-08-03 21:57:38.042 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:57:38.043 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
+2020-08-03 21:57:38.044 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-08-03 21:57:38.044 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:57:38.044 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000001, 00000000, test chapter 01
+2020-08-03 21:57:38.045 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000002, 00000000, test chapter 02
+2020-08-03 21:57:38.045 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000003, 00000000, test chapter 03
+2020-08-03 21:57:38.045 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000004, 00000000, test chapter 04
+2020-08-03 21:57:38.046 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000005, 00000000, test chapter 05
+2020-08-03 21:57:38.046 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:57:42.766 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 1
+2020-08-03 21:57:42.768 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:57:42.768 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:57:42.768 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:57:42.769 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 27
+2020-08-03 21:57:42.769 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:57:42.769 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
+2020-08-03 21:57:42.769 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-08-03 21:57:42.770 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:57:42.771 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000001, 00000000, test chapter 01
+2020-08-03 21:57:42.771 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000002, 00000000, test chapter 02
+2020-08-03 21:57:42.771 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000003, 00000000, test chapter 03
+2020-08-03 21:57:42.772 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000004, 00000000, test chapter 04
+2020-08-03 21:57:42.772 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000005, 00000000, test chapter 05
+2020-08-03 21:57:42.772 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:57:46.289 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 1
+2020-08-03 21:57:46.290 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:57:46.291 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:57:46.291 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:57:46.292 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 27
+2020-08-03 21:57:46.292 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:57:46.292 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
+2020-08-03 21:57:46.293 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-08-03 21:57:46.294 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:57:46.294 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000001, 00000000, test chapter 01
+2020-08-03 21:57:46.294 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000002, 00000000, test chapter 02
+2020-08-03 21:57:46.294 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000003, 00000000, test chapter 03
+2020-08-03 21:57:46.294 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000004, 00000000, test chapter 04
+2020-08-03 21:57:46.295 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000005, 00000000, test chapter 05
+2020-08-03 21:57:46.295 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:57:51.056 INFO  c.c.business.controller.admin.ChapterController   :36   [32m        [0;39m chapterDto: ChapterDto [Hash = 1311736684, id=null, courseId=21324354, name=qewqrewtre]
+2020-08-03 21:57:51.056 DEBUG com.course.server.mapper.ChapterMapper.insert     :159  [32m        [0;39m ==>  Preparing: insert into chapter (id, course_id, name) values (?, ?, ?) 
+2020-08-03 21:57:51.057 DEBUG com.course.server.mapper.ChapterMapper.insert     :159  [32m        [0;39m ==> Parameters: Af7xDZBY(String), 21324354(String), qewqrewtre(String)
+2020-08-03 21:57:51.059 DEBUG com.course.server.mapper.ChapterMapper.insert     :159  [32m        [0;39m <==    Updates: 1
+2020-08-03 21:57:51.070 INFO  c.c.business.controller.admin.ChapterController   :27   [32m        [0;39m pageDto: 1
+2020-08-03 21:57:51.073 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-08-03 21:57:51.073 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-08-03 21:57:51.073 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-08-03 21:57:51.074 TRACE c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 28
+2020-08-03 21:57:51.074 DEBUG c.c.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-08-03 21:57:51.074 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==>  Preparing: select id, course_id, name from chapter LIMIT ? 
+2020-08-03 21:57:51.074 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-08-03 21:57:51.075 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-08-03 21:57:51.075 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000001, 00000000, test chapter 01
+2020-08-03 21:57:51.075 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000002, 00000000, test chapter 02
+2020-08-03 21:57:51.076 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000003, 00000000, test chapter 03
+2020-08-03 21:57:51.076 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000004, 00000000, test chapter 04
+2020-08-03 21:57:51.076 TRACE c.c.server.mapper.ChapterMapper.selectByExample   :165  [32m        [0;39m <==        Row: 00000005, 00000000, test chapter 05
+2020-08-03 21:57:51.076 DEBUG c.c.server.mapper.ChapterMapper.selectByExample   :159  [32m        [0;39m <==      Total: 5
+2020-08-03 21:58:07.982 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
