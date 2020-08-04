@@ -12,7 +12,7 @@
       </button>
     </p>
     <pagination ref="pagination" v-bind:list="list"/>
-    <table id="simple-table" class="table  table-bordered table-hover">
+    <table id="simple-table" class="table table-bordered table-hover">
       <thead>
       <tr>
         <th>ID</th>
@@ -33,7 +33,7 @@
               <i class="ace-icon fa fa-pencil bigger-120"></i>
             </button>
 
-            <button class="btn btn-xs btn-danger">
+            <button @click="del(chapter.id)" class="btn btn-xs btn-danger">
               <i class="ace-icon fa fa-trash-o bigger-120"></i>
             </button>
           </div>
@@ -107,13 +107,24 @@
         })
       },
 
-      save() {
+      save(page) {
         let _this = this;
         _this.$ajax.post('http://127.0.0.1:9000/business/admin/chapter/save', _this.chapter).then(response => {
           console.log("save chapter result: ", response);
           let resp = response.data;
           if (resp.success) {
             $("#form-modal").modal("hide");
+            _this.list(1);
+          }
+        })
+      },
+
+      del(id) {
+        let _this = this;
+        _this.$ajax.delete('http://127.0.0.1:9000/business/admin/chapter/delete/'+id).then(response => {
+          console.log("delte chapter result: ", response);
+          let resp = response.data;
+          if (resp.success) {
             _this.list(1);
           }
         })
