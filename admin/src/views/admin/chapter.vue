@@ -1,11 +1,12 @@
 <template>
   <div>
     <p>
-      <button @click="list()" class="btn btn-white btn-default btn-round">
+      <button @click="list(1)" class="btn btn-white btn-default btn-round">
         <i class="ace-icon fa fa-refresh"></i>
         Refresh
       </button>
     </p>
+    <pagination ref="pagination" v-bind:list="list"/>
     <table id="simple-table" class="table  table-bordered table-hover">
       <thead>
       <tr>
@@ -82,8 +83,10 @@
 </template>
 
 <script>
+  import Pagination from "../../components/pagination.vue"
   export default {
     name: "chapter",
+    components: {Pagination},
     data: function() {
       return {
         chapters: []
@@ -91,17 +94,18 @@
     },
     mounted: function() {
       let _this= this;
-      _this.list();
+      _this.$refs.pagination.size = 5;
+      _this.list(1);
     },
     methods: {
-      list() {
+      list(page) {
         let _this = this;
         _this.$ajax.post('http://127.0.0.1:9000/business/admin/chapter/list', {
-          page: 1,
-          size: 1,
+          page: page,
+          size: _this.$refs.pagination.size,
         }).then(response => {
-          console.log("query chapter result: ", response);
           _this.chapters = response.data.list;
+          _this.$refs.pagination.render(page, response.data.total);
         })
       }
     }
