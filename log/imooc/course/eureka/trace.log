@@ -734,3 +734,39 @@
 2020-08-04 23:44:13.641 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/192.168.1.4:business:9002 with status UP (replication=true)
 2020-08-04 23:44:58.430 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 1ms
 2020-08-04 23:45:58.436 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 3ms
+2020-08-04 23:46:54.901 INFO  c.n.eureka.registry.PeerAwareInstanceRegistryImpl :539  [32m        [0;39m Current renewal threshold is : 13
+2020-08-04 23:46:58.443 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 5ms
+2020-08-04 23:47:16.125 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance SYSTEM/192.168.1.4:system:9001 with status DOWN (replication=false)
+2020-08-04 23:47:16.292 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/192.168.1.4:business:9002 with status DOWN (replication=false)
+2020-08-04 23:47:16.295 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/192.168.1.4:business:9002 (replication=false)
+2020-08-04 23:47:16.630 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance SYSTEM/192.168.1.4:system:9001 with status DOWN (replication=true)
+2020-08-04 23:47:16.631 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/192.168.1.4:business:9002 with status DOWN (replication=true)
+2020-08-04 23:47:16.631 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/192.168.1.4:business:9002 (replication=true)
+2020-08-04 23:47:17.046 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/192.168.1.4:business:9002 with status UP (replication=false)
+2020-08-04 23:47:17.561 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/192.168.1.4:business:9002 with status UP (replication=true)
+2020-08-04 23:47:19.164 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance SYSTEM/192.168.1.4:system:9001 (replication=false)
+2020-08-04 23:47:19.679 WARN  c.netflix.eureka.registry.AbstractInstanceRegistry:315  [32m        [0;39m DS: Registry: cancel failed because Lease is not registered for: SYSTEM/192.168.1.4:system:9001
+2020-08-04 23:47:19.679 INFO  com.netflix.eureka.resources.InstanceResource     :288  [32m        [0;39m Not Found (Cancel): SYSTEM - 192.168.1.4:system:9001
+2020-08-04 23:47:19.681 WARN  com.netflix.eureka.cluster.ReplicationTask        :35   [32m        [0;39m The replication of task SYSTEM/192.168.1.4:system:9001:Cancel@localhost failed with response code 404
+2020-08-04 23:47:19.681 WARN  com.netflix.eureka.cluster.PeerEurekaNode         :171  [32m        [0;39m SYSTEM/192.168.1.4:system:9001:Cancel@localhost: missing entry.
+2020-08-04 23:47:20.326 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance SYSTEM/192.168.1.4:system:9001 with status UP (replication=false)
+2020-08-04 23:47:20.831 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance SYSTEM/192.168.1.4:system:9001 with status UP (replication=true)
+2020-08-04 23:47:58.446 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 1ms
+2020-08-04 23:48:58.453 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 5ms
+2020-08-04 23:49:58.456 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 1ms
+2020-08-04 23:50:58.460 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 1ms
+2020-08-04 23:51:58.462 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 0ms
+2020-08-04 23:52:58.465 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 0ms
+2020-08-04 23:53:58.470 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 3ms
+2020-08-04 23:54:58.472 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 0ms
+2020-08-04 23:55:58.477 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 2ms
+2020-08-04 23:56:58.479 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 17ms
+2020-08-04 23:56:59.037 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/192.168.1.4:business:9002 with status DOWN (replication=false)
+2020-08-04 23:56:59.040 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/192.168.1.4:business:9002 (replication=false)
+2020-08-04 23:56:59.540 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/192.168.1.4:business:9002 with status DOWN (replication=true)
+2020-08-04 23:56:59.540 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:330  [32m        [0;39m Cancelled instance BUSINESS/192.168.1.4:business:9002 (replication=true)
+2020-08-04 23:56:59.832 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/192.168.1.4:business:9002 with status UP (replication=false)
+2020-08-04 23:57:00.347 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:266  [32m        [0;39m Registered instance BUSINESS/192.168.1.4:business:9002 with status UP (replication=true)
+2020-08-04 23:57:58.481 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 2ms
+2020-08-04 23:58:58.483 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 0ms
+2020-08-04 23:59:58.488 INFO  c.netflix.eureka.registry.AbstractInstanceRegistry:1250 [32m        [0;39m Running the evict task with compensationTime 2ms

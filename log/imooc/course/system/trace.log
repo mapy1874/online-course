@@ -117,3 +117,5 @@
 2020-08-04 23:35:51.592 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2020-08-04 23:40:51.583 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
 2020-08-04 23:45:51.593 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-04 23:50:51.604 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-04 23:55:51.615 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration

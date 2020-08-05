@@ -23,7 +23,7 @@ public class ValidatorUtil {
             length = str.length();
         }
         if (length < min || length > max) {
-            throw new ValidatorException(fieldName + " length should between"  + min + "and" + max + "digits");
+            throw new ValidatorException(fieldName + " length should between "  + min + " and " + max + " digits");
         }
     }
 }
