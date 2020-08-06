@@ -25,6 +25,7 @@ public class ChapterController {
     @Resource
     private ChapterService chapterService;
 
+    // chapter query
     @PostMapping("/list")
     public ResponseDto list(@RequestBody PageDto pageDto) {
         LOG.info("pageDto: {}", pageDto.getPage());
@@ -35,10 +36,9 @@ public class ChapterController {
         return responseDto;
     }
 
+    // save, update when id have value, create when id is null
     @PostMapping("/save")
     public ResponseDto save(@RequestBody ChapterDto chapterDto) {
-        LOG.info("chapterDto: {}", chapterDto);
-
         // validation in saving
         ValidatorUtil.require(chapterDto.getName(), "Name");
         ValidatorUtil.require(chapterDto.getCourseId(), "Course ID");
@@ -50,9 +50,9 @@ public class ChapterController {
         return responseDto;
     }
 
+    // delete
     @DeleteMapping("/delete/{id}")
-    public ResponseDto save(@PathVariable String id) {
-        LOG.info("id: {}", id);
+    public ResponseDto delete(@PathVariable String id) {
         ResponseDto responseDto = new ResponseDto();
         chapterService.delete(id);
         return responseDto;

@@ -28,18 +28,11 @@ public class ChapterService {
         List<Chapter> chapterList = chapterMapper.selectByExample(chapterExample);
         PageInfo<Chapter> pageInfo = new PageInfo<>(chapterList);
         pageDto.setTotal(pageInfo.getTotal());
-
-//        List<ChapterDto> chapterDtoList = new ArrayList<ChapterDto>();
-//        for (int i = 0, l = chapterList.size(); i < l; i++) {
-//            Chapter chapter = chapterList.get(i);
-//            ChapterDto chapterDto = new ChapterDto();
-//            BeanUtils.copyProperties(chapter, chapterDto);
-//            chapterDtoList.add(chapterDto);
-//        }
         List<ChapterDto> chapterDtoList = CopyUtil.copyList(chapterList, ChapterDto.class);
         pageDto.setList(chapterDtoList);
     }
 
+    // save
     public void save(ChapterDto chapterDto) {
         Chapter chapter = CopyUtil.copy(chapterDto, Chapter.class);
         if (StringUtils.isEmpty(chapterDto.getId())) {
@@ -49,6 +42,7 @@ public class ChapterService {
         }
     }
 
+    // create
     private void insert(Chapter chapter) {
         chapter.setId(UuidUtil.getShortUuid());
         chapterMapper.insert(chapter);
@@ -59,6 +53,7 @@ public class ChapterService {
         chapterMapper.updateByPrimaryKey(chapter);
     }
 
+    // delete
     public void delete(String id) {
         chapterMapper.deleteByPrimaryKey(id);
     }

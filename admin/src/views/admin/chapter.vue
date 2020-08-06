@@ -95,6 +95,7 @@
       _this.list(1);
     },
     methods: {
+      // list query
       list(page) {
         let _this = this;
         Loading.show();
@@ -109,6 +110,7 @@
         })
       },
 
+      // click to save
       save(page) {
         let _this = this;
         if (!Validator.require(_this.chapter.name, "Name")
@@ -119,7 +121,6 @@
         Loading.show();
         _this.$ajax.post('http://127.0.0.1:9000/business/admin/chapter/save', _this.chapter).then(response => {
           Loading.hide();
-          console.log("save chapter result: ", response);
           let resp = response.data;
           if (resp.success) {
             $("#form-modal").modal("hide");
@@ -131,13 +132,13 @@
         })
       },
 
+      // click to delete
       del(id) {
         let _this = this;
         Confirm.show("You cannot revert the deletion. Go ahead?", function () {
             Loading.show();
             _this.$ajax.delete('http://127.0.0.1:9000/business/admin/chapter/delete/'+id).then(response => {
               Loading.hide();
-              console.log("delte chapter result: ", response);
               let resp = response.data;
               if (resp.success) {
                 _this.list(1);
@@ -153,6 +154,7 @@
         $("#form-modal").modal("show");
       },
 
+      // click to edit
       edit(chapter) {
         let _this = this;
         _this.chapter = $.extend({},chapter);
