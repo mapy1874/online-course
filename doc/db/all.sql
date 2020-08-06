@@ -1,3 +1,4 @@
+# chapter table
 drop table if exists `chapter`;
 create table `chapter` (
     `id` char(8) not null comment 'ID',
@@ -31,6 +32,25 @@ values ('00000001', '00000000', 'test chapter 01'),
        ('00000022', '00000000', 'test chapter 22'),
        ('00000023', '00000000', 'test chapter 23'),
        ('00000024', '00000000', 'test chapter 24');
+
+# section table
+DROP TABLE IF EXISTS `section`;
+CREATE TABLE `section` (
+    `id` CHAR(8) NOT NULL DEFAULT '' COMMENT 'ID',
+    `title` VARCHAR(50) NOT NULL COMMENT 'title',
+    `course_id` CHAR(8) COMMENT 'course.id',
+    `chapter_id` CHAR(8) COMMENT 'chapter.id',
+    `video` VARCHAR(200) COMMENT 'video',
+    `time` INT COMMENT 'time (s)',
+    `charge` CHAR(1) COMMENT 'charge or not| C: charge, F: free',
+    `sort` INT COMMENT 'order',
+    `created_at` DATETIME(3) COMMENT 'created time',
+    `updated_at` DATETIME(3) COMMENT 'revision time',
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT 'section';
+
+INSERT INTO section (id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at)
+VALUES ('00000001','test section 01', '00000001', '00000000', '', 500, 'F', 1, now(), now());
 
 # test
 drop table if exists `test`;
