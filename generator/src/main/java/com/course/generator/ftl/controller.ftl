@@ -1,4 +1,4 @@
-package com.course.business.controller.admin;
+package com.course.${module}.controller.admin;
 
 import com.course.server.domain.${Domain};
 import com.course.server.dto.${Domain}Dto;
@@ -20,7 +20,7 @@ import java.util.List;
 public class ${Domain}Controller {
 
     private static final Logger LOG = LoggerFactory.getLogger(${Domain}Controller.class);
-    public static final String BUSINESS_NAME = "${Domain}";
+    public static final String BUSINESS_NAME = "${tableNameCn}";
 
     @Resource
     private ${Domain}Service ${domain}Service;
@@ -40,7 +40,7 @@ public class ${Domain}Controller {
     @PostMapping("/save")
     public ResponseDto save(@RequestBody ${Domain}Dto ${domain}Dto) {
         // validation in saving
-        
+
 
         ResponseDto responseDto = new ResponseDto();
         ${domain}Service.save(${domain}Dto);
