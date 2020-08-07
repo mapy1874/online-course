@@ -175,6 +175,17 @@
       // click to save
       save(page) {
         let _this = this;
+
+        // saving validation
+        // 1!=1 is for solving || in the first if
+        if (1 != 1
+            || !Validator.require(_this.section.title, "title")
+            || !Validator.length(_this.section.title, "title", 1, 50)
+            || !Validator.length(_this.section.video, "video", 1, 200)
+        ) {
+          return;
+        }
+
         Loading.show();
         _this.$ajax.post(process.env.VUE_APP_SERVER+'/business/admin/section/save', _this.section).then(response => {
           Loading.hide();

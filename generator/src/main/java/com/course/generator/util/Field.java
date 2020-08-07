@@ -9,6 +9,8 @@ public class Field {
     private String type;
     private String javaType;
     private String comment;
+    private Boolean nullAble; // can be empty or not
+    private Integer length; // length of the string
 
     @Override
     public String toString() {
@@ -20,6 +22,8 @@ public class Field {
                 ", type='" + type + '\'' +
                 ", javaType='" + javaType + '\'' +
                 ", comment='" + comment + '\'' +
+                ", nullAble=" + nullAble +
+                ", length=" + length +
                 '}';
     }
 
@@ -79,5 +83,19 @@ public class Field {
         this.comment = comment;
     }
 
+    public Boolean getNullAble() {
+        return nullAble;
+    }
 
+    public void setNullAble(Boolean nullAble) {
+        this.nullAble = nullAble;
+    }
+
+    public Integer getLength() {
+        return length;
+    }
+
+    public void setLength(Integer length) {
+        this.length = length;
+    }
 }

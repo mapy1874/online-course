@@ -64,3 +64,5 @@ create table `test` (
 insert into `test` (`id`, `name`)
     values (1, 'test'),
             (2, 'second');
+
+show full columns from `section`
