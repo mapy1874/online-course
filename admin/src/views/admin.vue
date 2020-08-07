@@ -409,7 +409,13 @@
                   <i class="menu-icon fa fa-caret-right" ></i>
                   Chapter Management
                 </router-link>
-
+                <b class="arrow"></b>
+              </li>
+              <li class="" id="business-section-sidebar">
+                <router-link to="/business/section">
+                  <i class="menu-icon fa fa-caret-right" ></i>
+                  Section Management
+                </router-link>
                 <b class="arrow"></b>
               </li>
             </ul>

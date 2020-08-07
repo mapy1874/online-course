@@ -1,5 +1,3 @@
-
-
 <template>
   <div>
     <p>
@@ -16,30 +14,28 @@
     <pagination ref="pagination" v-bind:list="list"/>
     <table id="simple-table" class="table table-bordered table-hover">
       <thead>
-      <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Course ID</th>
-        <th>Operation</th>
+      <tr><#list fieldList as field>
+        <th>${field.nameCn}</th></#list>
+         <th>Operation</th>
       </tr>
       </thead>
 
       <tbody>
-      <tr v-for="chapter in chapters">
-        <td>{{chapter.id}}</td>
-        <td>{{chapter.name}}</td>
-        <td>{{chapter.courseId}}</td>
-        <td>
-          <div class="hidden-sm hidden-xs btn-group">
-            <button @click="edit(chapter)" class="btn btn-xs btn-info">
-              <i class="ace-icon fa fa-pencil bigger-120"></i>
-            </button>
+      <tr v-for="${domain} in ${domain}s">
+        <#list fieldList as field>
+        <th>{{${domain}.${field.nameHump}}}</th>
+      </#list>
+      <td>
+        <div class="hidden-sm hidden-xs btn-group">
+          <button @click="edit(${domain})" class="btn btn-xs btn-info">
+            <i class="ace-icon fa fa-pencil bigger-120"></i>
+          </button>
 
-            <button @click="del(chapter.id)" class="btn btn-xs btn-danger">
-              <i class="ace-icon fa fa-trash-o bigger-120"></i>
-            </button>
-          </div>
-        </td>
+          <button @click="del(${domain}.id)" class="btn btn-xs btn-danger">
+            <i class="ace-icon fa fa-trash-o bigger-120"></i>
+          </button>
+        </div>
+      </td>
       </tr>
 
       </tbody>
@@ -54,19 +50,14 @@
           </div>
           <div class="modal-body">
             <form class="form-horizontal">
+              <#list fieldList as field>
               <div class="form-group">
-                <label class="col-sm-2 control-label">Name</label>
+                <label class="col-sm-2 control-label">${field.nameCn}</label>
                 <div class="col-sm-10">
-                  <input v-model="chapter.name" type="text" class="form-control" placeholder="Name">
+                  <input v-model="${domain}.${field.nameHump}" type="text" class="form-control">
                 </div>
               </div>
-              <div class="form-group">
-                <label class="col-sm-2 control-label">Course ID</label>
-                <div class="col-sm-10">
-                  <input v-model="chapter.courseId" type="text" class="form-control" placeholder="Course ID">
-                </div>
-              </div>
-
+            </#list>
             </form>
           </div>
           <div class="modal-footer">
@@ -83,13 +74,13 @@
 <script>
   import Pagination from "../../components/pagination.vue"
   export default {
-    name: "chapter",
+    name: "${domain}",
     components: {Pagination},
     data: function() {
       return {
-        chapter: {},
-        chapters: [],
-      }
+      ${domain}: {},
+      ${domain}s: [],
+    }
     },
     mounted: function() {
       let _this= this;
@@ -102,13 +93,13 @@
         let _this = this;
         Loading.show();
 
-        _this.$ajax.post(process.env.VUE_APP_SERVER+'/business/admin/chapter/list', {
+        _this.$ajax.post(process.env.VUE_APP_SERVER+'/${module}/admin/${domain}/list', {
           page: page,
           size: _this.$refs.pagination.size,
         }).then(response => {
           Loading.hide();
           let resp = response.data;
-          _this.chapters = resp.content.list;
+          _this.${domain}s = resp.content.list;
           _this.$refs.pagination.render(page, resp.content.total);
         })
       },
@@ -116,13 +107,8 @@
       // click to save
       save(page) {
         let _this = this;
-        if (!Validator.require(_this.chapter.name, "Name")
-          || !Validator.require(_this.chapter.courseId, "course ID")
-          || !Validator.length(_this.chapter.courseId, "course ID", 1, 8)) {
-          return;
-        }
         Loading.show();
-        _this.$ajax.post(process.env.VUE_APP_SERVER+'/business/admin/chapter/save', _this.chapter).then(response => {
+        _this.$ajax.post(process.env.VUE_APP_SERVER+'/${module}/admin/${domain}/save', _this.${domain}).then(response => {
           Loading.hide();
           let resp = response.data;
           if (resp.success) {
@@ -139,28 +125,28 @@
       del(id) {
         let _this = this;
         Confirm.show("You cannot revert the deletion. Go ahead?", function () {
-            Loading.show();
-            _this.$ajax.delete(process.env.VUE_APP_SERVER+'/business/admin/chapter/delete/'+id).then(response => {
-              Loading.hide();
-              let resp = response.data;
-              if (resp.success) {
-                _this.list(1);
-                Toast.success("Delete successfully!")
-              }
-            })
+          Loading.show();
+          _this.$ajax.delete(process.env.VUE_APP_SERVER+'/${module}/admin/${domain}/delete/'+id).then(response => {
+            Loading.hide();
+            let resp = response.data;
+            if (resp.success) {
+              _this.list(1);
+              Toast.success("Delete successfully!")
+            }
+          })
         });
       },
 
       add() {
         let _this = this;
-        _this.chapter = {};
+        _this.${domain} = {};
         $("#form-modal").modal("show");
       },
 
       // click to edit
-      edit(chapter) {
+      edit(${domain}) {
         let _this = this;
-        _this.chapter = $.extend({},chapter);
+        _this.${domain} = $.extend({},${domain});
         $("#form-modal").modal("show");
       },
     }
