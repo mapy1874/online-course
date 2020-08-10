@@ -16,31 +16,36 @@
       <thead>
       <tr>
         <th>ID</th>
+
         <th>title</th>
+
         <th>course.id</th>
+
         <th>chapter.id</th>
+
         <th>video</th>
+
         <th>time (s)</th>
+
         <th>charge or not</th>
+
         <th>order</th>
-        <th>created time</th>
-        <th>revision time</th>
+
+
          <th>Operation</th>
       </tr>
       </thead>
 
       <tbody>
       <tr v-for="section in sections">
-        <th>{{section.id}}</th>
-        <th>{{section.title}}</th>
-        <th>{{section.courseId}}</th>
-        <th>{{section.chapterId}}</th>
-        <th>{{section.video}}</th>
-        <th>{{section.time}}</th>
-        <th>{{section.charge}}</th>
-        <th>{{section.sort}}</th>
-        <th>{{section.createdAt}}</th>
-        <th>{{section.updatedAt}}</th>
+            <td>{{section.id}}</td>
+            <td>{{section.title}}</td>
+            <td>{{section.courseId}}</td>
+            <td>{{section.chapterId}}</td>
+            <td>{{section.video}}</td>
+            <td>{{section.time}}</td>
+            <td>{{section.charge}}</td>
+            <td>{{section.sort}}</td>
       <td>
         <div class="hidden-sm hidden-xs btn-group">
           <button @click="edit(section)" class="btn btn-xs btn-info">
@@ -66,12 +71,6 @@
           </div>
           <div class="modal-body">
             <form class="form-horizontal">
-              <div class="form-group">
-                <label class="col-sm-2 control-label">ID</label>
-                <div class="col-sm-10">
-                  <input v-model="section.id" type="text" class="form-control">
-                </div>
-              </div>
               <div class="form-group">
                 <label class="col-sm-2 control-label">title</label>
                 <div class="col-sm-10">
@@ -112,18 +111,6 @@
                 <label class="col-sm-2 control-label">order</label>
                 <div class="col-sm-10">
                   <input v-model="section.sort" type="text" class="form-control">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-2 control-label">created time</label>
-                <div class="col-sm-10">
-                  <input v-model="section.createdAt" type="text" class="form-control">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-sm-2 control-label">revision time</label>
-                <div class="col-sm-10">
-                  <input v-model="section.updatedAt" type="text" class="form-control">
                 </div>
               </div>
             </form>
