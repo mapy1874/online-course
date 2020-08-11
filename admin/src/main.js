@@ -10,12 +10,12 @@ Vue.prototype.$ajax = axios;
 
 // axios interceptors for logging
 axios.interceptors.request.use(function (config) {
-  console.log("request:", config);
+  // console.log("request:", config);
   return config;
 }, error => {})
 
 axios.interceptors.response.use(function (response) {
-  console.log("return result: ", response);
+  // console.log("return result: ", response);
   return response;
 }, error => {})
 

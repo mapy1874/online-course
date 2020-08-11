@@ -131,7 +131,7 @@
 <script>
   import Pagination from "../../components/pagination.vue"
   export default {
-    name: "section",
+    name: "business-section",
     components: {Pagination},
     data: function() {
       return {
