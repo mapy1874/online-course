@@ -12,6 +12,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
@@ -40,7 +41,9 @@ public class SectionService {
     }
 
     // save
-    public void save(SectionDto sectionDto) {
+    // will rollback for Exception
+    @Transactional(rollbackFor = Exception.class)
+    public void save(SectionDto sectionDto) throws Exception {
         Section section = CopyUtil.copy(sectionDto, Section.class);
         if (StringUtils.isEmpty(sectionDto.getId())) {
             this.insert(section);
@@ -48,6 +51,9 @@ public class SectionService {
             this.update(section);
         }
 
+//        if (true) {
+//            throw new RuntimeException("transaction test RuntimeException");
+//        }
         courseService.updateTime(sectionDto.getCourseId());
     }
 
