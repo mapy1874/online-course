@@ -43,7 +43,7 @@ public class SectionService {
     // save
     // will rollback for Exception
     @Transactional(rollbackFor = Exception.class)
-    public void save(SectionDto sectionDto) throws Exception {
+    public void save(SectionDto sectionDto) {
         Section section = CopyUtil.copy(sectionDto, Section.class);
         if (StringUtils.isEmpty(sectionDto.getId())) {
             this.insert(section);
