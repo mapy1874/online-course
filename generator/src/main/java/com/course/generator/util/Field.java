@@ -11,6 +11,24 @@ public class Field {
     private String comment;
     private Boolean nullAble; // can be empty or not
     private Integer length; // length of the string
+    private Boolean enums; // 是否是枚举
+    private String enumsConst; // 枚举常量 COURSE_LEVEL
+
+    public Boolean getEnums() {
+        return enums;
+    }
+
+    public void setEnums(Boolean enums) {
+        this.enums = enums;
+    }
+
+    public String getEnumsConst() {
+        return enumsConst;
+    }
+
+    public void setEnumsConst(String enumsConst) {
+        this.enumsConst = enumsConst;
+    }
 
     @Override
     public String toString() {
@@ -24,6 +42,8 @@ public class Field {
                 ", comment='" + comment + '\'' +
                 ", nullAble=" + nullAble +
                 ", length=" + length +
+                ", enums=" + enums +
+                ", enumsConst='" + enumsConst + '\'' +
                 '}';
     }
 

@@ -62,9 +62,9 @@ create table course (
     time int default 0 comment 'time|s',
     price decimal(8,2) default 0.00 comment 'price (CNY)',
     image varchar(100) comment 'cover',
-    level char(1) comment 'level|ONE("1", "Beginner"),TWO("2", "intermediate"),THREE("3", "Advanced")',
-    charge char(1) comment 'Charge|CHARGE("C", "Charge"),FREE("F", "Free")',
-    status char(1) comment 'Status|PUBLISH("P", "Published"),DRAFT("D", "Draft")',
+    level char(1) comment 'level|enum[CourseLevelEnum]: ONE("1", "Beginner"),TWO("2", "intermediate"),THREE("3", "Advanced")',
+    charge char(1) comment 'Charge|enum[CourseChargeEnum]：CHARGE("C", "Charge"),FREE("F", "Free")',
+    status char(1) comment 'Status|enum[CourseStatusEnum]：PUBLISH("P", "Published"),DRAFT("D", "Draft")',
     enroll integer default 0 comment 'enrollment',
     sort int comment 'sort',
     created_at datetime(3) comment 'created at',
@@ -73,10 +73,8 @@ create table course (
 ) engine=innodb default charset=utf8mb4 comment='course';
 
 INSERT INTO course (id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at)
-    VALUES ('00000001', '测试课程01', '这是一门测试课程', 7200, 19.9, '', 0, 'C', 'D', 100, 0, now(), now());
+        VALUES ('00000001', '测试课程01', '这是一门测试课程', 7200, 19.9, '', 1, 'C', 'D', 100, 0, now(), now());
 
-INSERT INTO course (id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at)
-VALUES ('00000001', '测试课程01', '这是一门测试课程', 7200, 19.9, '', 0, 'C', 'D', 100, 0, now(), now());
 
 
 # test
