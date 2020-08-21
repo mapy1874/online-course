@@ -25,6 +25,9 @@ public class SectionService {
     @Resource
     private SectionMapper sectionMapper;
 
+    @Resource
+    private CourseService courseService;
+
     public void list(PageDto pageDto) {
         PageHelper.startPage(pageDto.getPage(), pageDto.getSize());
         SectionExample sectionExample = new SectionExample();
@@ -44,6 +47,8 @@ public class SectionService {
         } else {
             this.update(section);
         }
+
+        courseService.updateTime(sectionDto.getCourseId());
     }
 
     // create

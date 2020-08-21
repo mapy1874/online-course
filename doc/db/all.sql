@@ -91,3 +91,7 @@ insert into `test` (`id`, `name`)
             (2, 'second');
 
 show full columns from `section`
+
+
+UPDATE course c set `time`  = (SELECT sum(`time`) FROM `section` WHERE course_id='00000001')
+    WHERE c.id = '00000001';
