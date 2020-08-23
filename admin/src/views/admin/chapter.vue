@@ -1,6 +1,11 @@
 <template>
   <div>
+    <h3>{{course.name}}</h3>
     <p>
+      <router-link to="/business/course" class="btn btn-white btn-default btn-round">
+        <i class="ace-icon fa fa-arrow-left"></i>
+        Return to course
+      </router-link>
       <button @click="add()" class="btn btn-white btn-default btn-round">
         <i class="ace-icon fa fa-edit"></i>
         Create
@@ -87,11 +92,18 @@
       return {
         chapter: {},
         chapters: [],
+        course: {},
       }
     },
     mounted: function() {
       let _this= this;
       _this.$refs.pagination.size = 5;
+      // null.name is error. {}.name isn't
+      let course = SessionStorage.get("course") || {};
+      if (Tool.isEmpty(course)) {
+        _this.$router.push("/welcome");
+      }
+      _this.course = course;
       _this.list(1);
     },
     methods: {

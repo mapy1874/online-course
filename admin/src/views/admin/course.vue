@@ -44,6 +44,9 @@
               <button @click="del(course.id)" class="btn btn-xs btn-white btn-info btn-round">
                 Delete
               </button>
+              <button @click="toChapter(course)" class="btn btn-xs btn-white btn-info btn-round">
+                Chapter
+              </button>
             </p>
           </div>
         </div>
@@ -289,6 +292,13 @@
         let _this = this;
         _this.course = $.extend({},course);
         $("#form-modal").modal("show");
+      },
+
+      // jump to chapter
+      toChapter(course) {
+        let _this = this;
+        SessionStorage.set("course", course);
+        _this.$router.push("/business/chapter")
       },
     }
   }
