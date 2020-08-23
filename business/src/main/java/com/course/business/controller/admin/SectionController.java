@@ -4,6 +4,7 @@ import com.course.server.domain.Section;
 import com.course.server.dto.SectionDto;
 import com.course.server.dto.PageDto;
 import com.course.server.dto.ResponseDto;
+import com.course.server.dto.SectionPageDto;
 import com.course.server.service.SectionService;
 import com.course.server.util.ValidatorUtil;
 import org.slf4j.Logger;
@@ -27,12 +28,14 @@ public class SectionController {
 
     // section query
     @PostMapping("/list")
-    public ResponseDto list(@RequestBody PageDto pageDto) {
-        LOG.info("pageDto: {}", pageDto.getPage());
+    public ResponseDto list(@RequestBody SectionPageDto sectionPageDto) {
+        LOG.info("pageDto: {}", sectionPageDto.getPage());
 
         ResponseDto responseDto = new ResponseDto();
-        sectionService.list(pageDto);
-        responseDto.setContent(pageDto);
+        ValidatorUtil.require(sectionPageDto.getCourseId(), "Course ID");
+        ValidatorUtil.require(sectionPageDto.getChapterId(), "Chapter ID");
+        sectionService.list(sectionPageDto);
+        responseDto.setContent(sectionPageDto);
         return responseDto;
     }
 
@@ -40,9 +43,9 @@ public class SectionController {
     @PostMapping("/save")
     public ResponseDto save(@RequestBody SectionDto sectionDto) {
         // validation in saving
-            ValidatorUtil.require(sectionDto.getTitle(), "title");
-                ValidatorUtil.length(sectionDto.getTitle(), "title", 1, 50);
-                ValidatorUtil.length(sectionDto.getVideo(), "video", 1, 200);
+        ValidatorUtil.require(sectionDto.getTitle(), "title");
+        ValidatorUtil.length(sectionDto.getTitle(), "title", 1, 50);
+        ValidatorUtil.length(sectionDto.getVideo(), "video", 1, 200);
 
         ResponseDto responseDto = new ResponseDto();
         sectionService.save(sectionDto);

@@ -1,4 +1,4 @@
-2020-08-21 11:24:59.845 ERROR c.netflix.eureka.cluster.ReplicationTaskProcessor :96   [32m        [0;39m It seems to be a socket read timeout exception, it will retry later. if it continues to happen and some eureka node occupied all the cpu time, you should set property 'eureka.server.peer-node-read-timeout-ms' to a bigger value
+2020-08-22 22:10:43.294 ERROR c.netflix.eureka.cluster.ReplicationTaskProcessor :96   [32m        [0;39m It seems to be a socket read timeout exception, it will retry later. if it continues to happen and some eureka node occupied all the cpu time, you should set property 'eureka.server.peer-node-read-timeout-ms' to a bigger value
 com.sun.jersey.api.client.ClientHandlerException: java.net.SocketTimeoutException: Read timed out
 	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
 	at com.netflix.eureka.cluster.DynamicGZIPContentEncodingFilter.handle(DynamicGZIPContentEncodingFilter.java:48)

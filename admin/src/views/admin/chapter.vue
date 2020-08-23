@@ -1,6 +1,10 @@
 <template>
   <div>
-    <h3>{{course.name}}</h3>
+    <h4 class="lighter">
+      <i class="ace-icon fa fa-hand-o-right icon-animated-hand-pointer blue"></i>
+      <router-link to="/business/course" class="pink"> {{course.name}} </router-link>
+    </h4>
+    <hr>
     <p>
       <router-link to="/business/course" class="btn btn-white btn-default btn-round">
         <i class="ace-icon fa fa-arrow-left"></i>
@@ -22,7 +26,6 @@
       <tr>
         <th>ID</th>
         <th>Name</th>
-        <th>Course ID</th>
         <th>Operation</th>
       </tr>
       </thead>
@@ -31,16 +34,20 @@
       <tr v-for="chapter in chapters">
         <td>{{chapter.id}}</td>
         <td>{{chapter.name}}</td>
-        <td>{{chapter.courseId}}</td>
         <td>
           <div class="hidden-sm hidden-xs btn-group">
-            <button @click="edit(chapter)" class="btn btn-xs btn-info">
-              <i class="ace-icon fa fa-pencil bigger-120"></i>
+            <button @click="edit(chapter)" class="btn btn-white btn-xs btn-info btn-round">
+              Edit
+            </button>&nbsp;
+
+            <button @click="del(chapter.id)" class="btn btn-white btn-warning btn-xs btn-round">
+              Delete
+            </button>&nbsp;
+
+            <button @click="toSection(chapter)" class="btn btn-white btn-xs btn-info btn-round">
+              Section
             </button>
 
-            <button @click="del(chapter.id)" class="btn btn-xs btn-danger">
-              <i class="ace-icon fa fa-trash-o bigger-120"></i>
-            </button>
           </div>
         </td>
       </tr>
@@ -173,6 +180,12 @@
         let _this = this;
         _this.chapter = $.extend({},chapter);
         $("#form-modal").modal("show");
+      },
+
+      toSection(chapter) {
+        let _this = this;
+        SessionStorage.set("chapter", chapter);
+        _this.$router.push("/business/section");
       },
     }
   }
