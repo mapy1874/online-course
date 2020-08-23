@@ -40,7 +40,7 @@
             <p>
               <span class="badge badge-info">{{course.id}}</span>
               <span class="badge badge-info">Sort：{{course.sort}}</span>
-              <span class="badge badge-info">Length：{{course.time}}</span>
+              <span class="badge badge-info">Length：{{course.time | formatSecond}}</span>
             </p>
             <p>
               <button @click="edit(course)" class="btn btn-xs btn-white btn-info btn-round">
