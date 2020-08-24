@@ -30,6 +30,9 @@ public class CourseService {
     @Resource
     private MyCourseMapper myCourseMapper;
 
+    @Resource
+    private CourseCategoryService courseCategoryService;
+
     private static final Logger LOG = LoggerFactory.getLogger(CourseService.class);
 
     public void list(PageDto pageDto) {
@@ -51,6 +54,9 @@ public class CourseService {
         } else {
             this.update(course);
         }
+
+        // save categories batch
+        courseCategoryService.saveBatch(courseDto.getId(), courseDto.getCategorys());
     }
 
     // create
