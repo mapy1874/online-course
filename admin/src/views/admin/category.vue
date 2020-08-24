@@ -166,6 +166,13 @@
               }
             }
           }
+
+          _this.level2 = [];
+          // click the current row in level 1 to trigger level 2 table
+          // vue need some time to bind variables before the jquery
+          setTimeout(() => {
+            $("tr.active").trigger("click");
+          }, 100);
         })
       },
 
