@@ -157,6 +157,8 @@
       _this.chapter = chapter;
       // console.log(_this.course.id, _this.chapter.id);
       _this.list(1);
+
+      this.$parent.activeSidebar("business-course-sidebar");
     },
     methods: {
       // list query

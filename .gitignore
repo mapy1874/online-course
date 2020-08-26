@@ -72,3 +72,12 @@ build/
 /log/imooc/course/eureka/trace.2020-08-24.0.log
 /log/imooc/course/gateway/trace.2020-08-24.0.log
 /log/imooc/course/system/trace.2020-08-24.0.log
+/log/imooc/course/business/error.2020-08-25.0.log
+/log/imooc/course/business/trace.2020-08-25.0.log
+/log/imooc/course/eureka/
+/log/imooc/course/eureka/trace.2020-08-25.0.log
+/log/imooc/course/gateway/
+/log/imooc/course/gateway/error.2020-08-25.0.log
+/log/imooc/course/gateway/trace.2020-08-25.0.log
+/log/imooc/course/system/
+/log/imooc/course/system/trace.2020-08-25.0.log
