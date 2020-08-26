@@ -1,6 +1,5 @@
 package com.course.business.controller.admin;
 
-import com.course.server.domain.Teacher;
 import com.course.server.dto.TeacherDto;
 import com.course.server.dto.PageDto;
 import com.course.server.dto.ResponseDto;
@@ -8,8 +7,6 @@ import com.course.server.service.TeacherService;
 import com.course.server.util.ValidatorUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.validation.ValidationUtils;
-import org.springframework.validation.Validator;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -62,4 +59,12 @@ public class TeacherController {
         return responseDto;
     }
 
+    // teacher query
+    @PostMapping("/all")
+    public ResponseDto all() {
+        ResponseDto responseDto = new ResponseDto();
+        List<TeacherDto> teacherDtoList = teacherService.all();
+        responseDto.setContent(teacherDtoList);
+        return responseDto;
+    }
 }

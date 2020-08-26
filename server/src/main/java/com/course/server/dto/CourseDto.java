@@ -75,6 +75,8 @@ public class CourseDto {
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date updatedAt;
 
+    private String teacherId;
+
     public List<CategoryDto> getCategorys() {
         return categorys;
     }
@@ -189,7 +191,6 @@ public class CourseDto {
         this.updatedAt = updatedAt;
     }
 
-
     @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer("CourseDto{");
@@ -206,8 +207,18 @@ public class CourseDto {
         sb.append(", sort=").append(sort);
         sb.append(", createdAt=").append(createdAt);
         sb.append(", updatedAt=").append(updatedAt);
+        sb.append(", teacherId='").append(teacherId).append('\'');
         sb.append(", categorys=").append(categorys);
         sb.append('}');
         return sb.toString();
     }
+
+    public String getTeacherId() {
+        return teacherId;
+    }
+
+    public void setTeacherId(String teacherId) {
+        this.teacherId = teacherId;
+    }
+
 }

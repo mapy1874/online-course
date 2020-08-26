@@ -49,8 +49,10 @@ CREATE TABLE `section` (
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT 'section';
 
-INSERT INTO section (id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at)
-VALUES ('00000001','test section 01', '00000001', '00000000', '', 500, 'F', 1, now(), now());
+insert into course (id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at)
+values ('00000001', '测试课程01', '这是一门测试课程', 7200, 19.9, '', 1, 'c', 'd', 100, 0, now(), now());
+
+alter table `course` add column (`teacher_id` char(8) comment '讲师|teacher.id');
 
 # course table
 -- 课程
