@@ -161,3 +161,14 @@ create table `course_category` (
   `category_id` char(8) comment 'category|course.id',
   primary key (`id`)
 ) engine=innodb default charset=utf8mb4 comment='course category';
+
+
+# 课程内容
+# 大文本字段或经常更新的字段一般拆分成单独的一张表
+drop table if exists `course_content`;
+create table `course_content` (
+    `id` char(8) not null default '' comment 'course id',
+    `content` mediumtext not null comment 'course content',
+    primary key (`id`)
+) engine=innodb default charset=utf8mb4 comment='course content';
+
