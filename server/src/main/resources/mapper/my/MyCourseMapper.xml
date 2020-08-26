@@ -6,4 +6,20 @@
         UPDATE course c set `time`  = (SELECT sum(`time`) FROM `section` WHERE course_id=#{courseId})
         WHERE c.id = #{courseId}
     </update>
+
+    <update id="updateSort" parameterType="com.course.server.dto.SortDto">
+        update course set `sort`= #{newSort} where id = #{id}
+    </update>
+
+    <update id="moveSortsBackward" parameterType="com.course.server.dto.SortDto">
+        <![CDATA[
+        update course set `sort`= (`sort`+1) where `sort` >= #{newSort} and `sort` <= #{oldSort} and id != #{id}
+        ]]>
+    </update>
+
+    <update id="moveSortsForward" parameterType="com.course.server.dto.SortDto">
+        <![CDATA[
+        update course set `sort`= (`sort`-1) where `sort` <= #{newSort} and `sort` >= #{oldSort} and id != #{id}
+        ]]>
+    </update>
 </mapper>
