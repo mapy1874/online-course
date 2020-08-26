@@ -12,50 +12,97 @@
       </button>
     </p>
     <pagination ref="pagination" v-bind:list="list"/>
-    <table id="simple-table" class="table table-bordered table-hover">
-      <thead>
-      <tr>
-        <th>id</th>
 
-        <th>name</th>
+    <div class="row">
+      <div v-for="teacher in teachers" class="col-md-3 center">
+        <div>
+          <span class="profile-picture">
+            <img v-show="!teacher.image" class="editable img-responsive editable-click editable-empty" src="/ace/assets/images/avatars/profile-pic.jpg" v-bind:title="teacher.intro"/>
+            <img v-show="teacher.image" class="media-object" v-bind:src="teacher.image" v-bind:title="teacher.intro"/>
+          </span>
 
-        <th>nickname</th>
+          <div class="space-4"></div>
 
-        <th>image</th>
+          <div class="width-85 label label-info label-xlg arrowed-in arrowed-in-right">
+            <div class="inline position-relative">
+              <a href="javascript:;" class="user-title-label dropdown-toggle" data-toggle="dropdown">
+                <i class="ace-icon fa fa-circle light-green"></i>
+                &nbsp;
+                <span class="white">{{teacher.position}}</span>
+              </a>
+            </div>
+          </div>
+        </div>
 
-        <th>position</th>
+        <div class="space-6"></div>
 
-        <th>motto</th>
+        <a href="javascript:;" class="text-info bigger-110" v-bind:title="teacher.motto">
+          <i class="ace-icon fa fa-user"></i>
+          {{teacher.name}}【{{teacher.nickname}}】
+        </a>
 
-        <th>intro</th>
-         <th>Operation</th>
-      </tr>
-      </thead>
+        <div class="space-6"></div>
 
-      <tbody>
-      <tr v-for="teacher in teachers">
-        <td>{{teacher.id}}</td>
-        <td>{{teacher.name}}</td>
-        <td>{{teacher.nickname}}</td>
-        <td>{{teacher.image}}</td>
-        <td>{{teacher.position}}</td>
-        <td>{{teacher.motto}}</td>
-        <td>{{teacher.intro}}</td>
-      <td>
-        <div class="hidden-sm hidden-xs btn-group">
-          <button @click="edit(teacher)" class="btn btn-xs btn-info">
+        <div class="profile-social-links align-center">
+          <button v-on:click="edit(teacher)" class="btn btn-xs btn-info">
             <i class="ace-icon fa fa-pencil bigger-120"></i>
           </button>
-
-          <button @click="del(teacher.id)" class="btn btn-xs btn-danger">
+          &nbsp;
+          <button v-on:click="del(teacher.id)" class="btn btn-xs btn-danger">
             <i class="ace-icon fa fa-trash-o bigger-120"></i>
           </button>
         </div>
-      </td>
-      </tr>
 
-      </tbody>
-    </table>
+        <div class="hr hr16 dotted"></div>
+
+      </div>
+    </div>
+
+
+    <!--    <table id="simple-table" class="table table-bordered table-hover">-->
+<!--      <thead>-->
+<!--      <tr>-->
+<!--        <th>id</th>-->
+
+<!--        <th>name</th>-->
+
+<!--        <th>nickname</th>-->
+
+<!--        <th>image</th>-->
+
+<!--        <th>position</th>-->
+
+<!--        <th>motto</th>-->
+
+<!--        <th>intro</th>-->
+<!--         <th>Operation</th>-->
+<!--      </tr>-->
+<!--      </thead>-->
+
+<!--      <tbody>-->
+<!--      <tr v-for="teacher in teachers">-->
+<!--        <td>{{teacher.id}}</td>-->
+<!--        <td>{{teacher.name}}</td>-->
+<!--        <td>{{teacher.nickname}}</td>-->
+<!--        <td>{{teacher.image}}</td>-->
+<!--        <td>{{teacher.position}}</td>-->
+<!--        <td>{{teacher.motto}}</td>-->
+<!--        <td>{{teacher.intro}}</td>-->
+<!--      <td>-->
+<!--        <div class="hidden-sm hidden-xs btn-group">-->
+<!--          <button @click="edit(teacher)" class="btn btn-xs btn-info">-->
+<!--            <i class="ace-icon fa fa-pencil bigger-120"></i>-->
+<!--          </button>-->
+
+<!--          <button @click="del(teacher.id)" class="btn btn-xs btn-danger">-->
+<!--            <i class="ace-icon fa fa-trash-o bigger-120"></i>-->
+<!--          </button>-->
+<!--        </div>-->
+<!--      </td>-->
+<!--      </tr>-->
+
+<!--      </tbody>-->
+<!--    </table>-->
 
     <div id="form-modal" class="modal fade" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
@@ -99,7 +146,7 @@
                 <div class="form-group">
                   <label class="col-sm-2 control-label">intro</label>
                   <div class="col-sm-10">
-                    <input v-model="teacher.intro" class="form-control">
+                    <textarea v-model="teacher.intro" class="form-control" rows="5"></textarea>
                   </div>
                 </div>
             </form>
