@@ -128,7 +128,7 @@
                 <div class="form-group">
                   <label class="col-sm-2 control-label">image</label>
                   <div class="col-sm-10">
-                    <input v-model="teacher.image" class="form-control">
+                    <input type="file" @change="uploadImage()" id="file-upload-input">
                   </div>
                 </div>
                 <div class="form-group">
@@ -184,7 +184,7 @@
         let _this = this;
         Loading.show();
 
-        _this.$ajax.post(process.env.VUE_APP_SERVER+'/business/admin/teacher/list', {
+        _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/teacher/list', {
           page: page,
           size: _this.$refs.pagination.size,
         }).then(response => {
@@ -202,19 +202,19 @@
         // saving validation
         // 1!=1 is for solving || in the first if
         if (1 != 1
-            || !Validator.require(_this.teacher.name, "name")
-            || !Validator.length(_this.teacher.name, "name", 1, 50)
-            || !Validator.length(_this.teacher.nickname, "nickname", 1, 50)
-            || !Validator.length(_this.teacher.image, "image", 1, 100)
-            || !Validator.length(_this.teacher.position, "position", 1, 50)
-            || !Validator.length(_this.teacher.motto, "motto", 1, 50)
-            || !Validator.length(_this.teacher.intro, "intro", 1, 500)
+          || !Validator.require(_this.teacher.name, "name")
+          || !Validator.length(_this.teacher.name, "name", 1, 50)
+          || !Validator.length(_this.teacher.nickname, "nickname", 1, 50)
+          || !Validator.length(_this.teacher.image, "image", 1, 100)
+          || !Validator.length(_this.teacher.position, "position", 1, 50)
+          || !Validator.length(_this.teacher.motto, "motto", 1, 50)
+          || !Validator.length(_this.teacher.intro, "intro", 1, 500)
         ) {
           return;
         }
 
         Loading.show();
-        _this.$ajax.post(process.env.VUE_APP_SERVER+'/business/admin/teacher/save', _this.teacher).then(response => {
+        _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/teacher/save', _this.teacher).then(response => {
           Loading.hide();
           let resp = response.data;
           if (resp.success) {
@@ -232,7 +232,7 @@
         let _this = this;
         Confirm.show("You cannot revert the deletion. Go ahead?", function () {
           Loading.show();
-          _this.$ajax.delete(process.env.VUE_APP_SERVER+'/business/admin/teacher/delete/'+id).then(response => {
+          _this.$ajax.delete(process.env.VUE_APP_SERVER + '/business/admin/teacher/delete/' + id).then(response => {
             Loading.hide();
             let resp = response.data;
             if (resp.success) {
@@ -252,9 +252,22 @@
       // click to edit
       edit(teacher) {
         let _this = this;
-        _this.teacher = $.extend({},teacher);
+        _this.teacher = $.extend({}, teacher);
         $("#form-modal").modal("show");
       },
+
+      uploadImage() {
+        let _this = this;
+        let formData = new window.FormData();
+        // key："file"必须和后端controller参数名一致
+        formData.append('file', document.querySelector('#file-upload-input').files[0]);
+        Loading.show();
+        _this.$ajax.post(process.env.VUE_APP_SERVER + '/file/admin/upload', formData).then((response) => {
+          Loading.hide();
+          let resp = response.data;
+          console.log(resp);
+        })
+      }
     }
   }
 </script>
