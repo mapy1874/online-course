@@ -32,7 +32,7 @@ public class UploadController {
         String fileName = file.getOriginalFilename();
         String key = UuidUtil.getShortUuid();
         // do not forger / before Users!
-        String fullPath = "/Users/patrick/Projects/course/data/file/imooc/teacher/" + key + "-" + fileName;
+        String fullPath = "/Users/patrick/Projects/course/data/file/imooc/course/teacher/" + key + "-" + fileName;
         File dest = new File(fullPath);
         LOG.info(dest.getAbsolutePath());
 
