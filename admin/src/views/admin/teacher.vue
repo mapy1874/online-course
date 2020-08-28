@@ -18,7 +18,7 @@
         <div>
           <span class="profile-picture">
             <img v-show="!teacher.image" class="editable img-responsive editable-click editable-empty" src="/ace/assets/images/avatars/profile-pic.jpg" v-bind:title="teacher.intro"/>
-            <img v-show="teacher.image" class="media-object" v-bind:src="teacher.image" v-bind:title="teacher.intro"/>
+            <img v-show="teacher.image" class="editable img-responsive editable-click editable-empty" v-bind:src="teacher.image" v-bind:title="teacher.intro"/>
           </span>
 
           <div class="space-4"></div>
@@ -58,52 +58,6 @@
       </div>
     </div>
 
-
-    <!--    <table id="simple-table" class="table table-bordered table-hover">-->
-<!--      <thead>-->
-<!--      <tr>-->
-<!--        <th>id</th>-->
-
-<!--        <th>name</th>-->
-
-<!--        <th>nickname</th>-->
-
-<!--        <th>image</th>-->
-
-<!--        <th>position</th>-->
-
-<!--        <th>motto</th>-->
-
-<!--        <th>intro</th>-->
-<!--         <th>Operation</th>-->
-<!--      </tr>-->
-<!--      </thead>-->
-
-<!--      <tbody>-->
-<!--      <tr v-for="teacher in teachers">-->
-<!--        <td>{{teacher.id}}</td>-->
-<!--        <td>{{teacher.name}}</td>-->
-<!--        <td>{{teacher.nickname}}</td>-->
-<!--        <td>{{teacher.image}}</td>-->
-<!--        <td>{{teacher.position}}</td>-->
-<!--        <td>{{teacher.motto}}</td>-->
-<!--        <td>{{teacher.intro}}</td>-->
-<!--      <td>-->
-<!--        <div class="hidden-sm hidden-xs btn-group">-->
-<!--          <button @click="edit(teacher)" class="btn btn-xs btn-info">-->
-<!--            <i class="ace-icon fa fa-pencil bigger-120"></i>-->
-<!--          </button>-->
-
-<!--          <button @click="del(teacher.id)" class="btn btn-xs btn-danger">-->
-<!--            <i class="ace-icon fa fa-trash-o bigger-120"></i>-->
-<!--          </button>-->
-<!--        </div>-->
-<!--      </td>-->
-<!--      </tr>-->
-
-<!--      </tbody>-->
-<!--    </table>-->
-
     <div id="form-modal" class="modal fade" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -129,7 +83,11 @@
                   <label class="col-sm-2 control-label">image</label>
                   <div class="col-sm-10">
                     <input type="file" v-on:change="uploadImage()" id="file-upload-input">
-                    <img v-bind:src="teacher.image" class="img-responsive">
+                    <div v-show="teacher.image" class="row">
+                      <div class="col-md-4">
+                        <img v-bind:src="teacher.image" class="img-responsive">
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="form-group">
