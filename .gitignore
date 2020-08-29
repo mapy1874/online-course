@@ -32,3 +32,4 @@ build/
 ### VS Code ###
 .vscode/
 /log/imooc/course/
+/data/file/imooc/course/teacher/

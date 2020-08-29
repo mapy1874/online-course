@@ -82,11 +82,10 @@
                 <div class="form-group">
                   <label class="col-sm-2 control-label">image</label>
                   <div class="col-sm-10">
-                    <button type="button" @click="selectImage()" class="btn btn-white btn-default btn-round">
-                      <i class="ace-icon fa fa-upload"></i>
-                      Upload Image
-                    </button>
-                    <input type="file" ref="file" v-on:change="uploadImage()" id="file-upload-input" class="hidden">
+                    <file v-bind:id="'image-upload'"
+                          v-bind:text="'Upload Image'"
+                          v-bind:suffixs="['jpg', 'jpeg', 'png']"
+                          v-bind:after-upload="afterUpload"></file>
                     <div v-show="teacher.image" class="row">
                       <div class="col-md-4">
                         <img v-bind:src="teacher.image" class="img-responsive">
@@ -127,9 +126,10 @@
 
 <script>
   import Pagination from "../../components/pagination.vue"
+  import File from "../../components/file.vue";
   export default {
     name: "business-teacher",
-    components: {Pagination},
+    components: {Pagination, File},
     data: function() {
       return {
         teacher: {},
@@ -219,44 +219,11 @@
         $("#form-modal").modal("show");
       },
 
-      uploadImage() {
+      afterUpload(resp) {
         let _this = this;
-        let formData = new window.FormData();
-        let file = _this.$refs.file.files[0];
-
-
-        // 判断文件格式
-        let suffixs = ["jpg", "jpeg", "png"];
-        let fileName = file.name;
-        let suffix = fileName.substring(fileName.lastIndexOf(".") + 1, fileName.length).toLowerCase();
-        let validateSuffix = false;
-        for (let i = 0; i < suffixs.length; i++) {
-          if (suffixs[i].toLowerCase() === suffix) {
-            validateSuffix = true;
-            break;
-          }
-        }
-        if (!validateSuffix) {
-          Toast.warning("File format is not correct, only supports:：" + suffixs.join(","));
-          return;
-        }
-
-        // key："file"必须和后端controller参数名一致
-        formData.append('file', file);
-        Loading.show();
-        _this.$ajax.post(process.env.VUE_APP_SERVER + '/file/admin/upload', formData).then((response) => {
-          Loading.hide();
-          let resp = response.data;
-          let image = resp.content;
-          console.log("image address:", image);
-          _this.teacher.image = image;
-        })
+        let image = resp.content;
+        _this.teacher.image = image;
       },
-
-      selectImage() {
-        $("#file-upload-input").trigger("click");
-      }
-
     }
   }
 </script>
