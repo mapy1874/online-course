@@ -86,7 +86,7 @@
                       <i class="ace-icon fa fa-upload"></i>
                       Upload Image
                     </button>
-                    <input type="file" v-on:change="uploadImage()" id="file-upload-input" class="hidden">
+                    <input type="file" ref="file" v-on:change="uploadImage()" id="file-upload-input" class="hidden">
                     <div v-show="teacher.image" class="row">
                       <div class="col-md-4">
                         <img v-bind:src="teacher.image" class="img-responsive">
@@ -222,8 +222,27 @@
       uploadImage() {
         let _this = this;
         let formData = new window.FormData();
+        let file = _this.$refs.file.files[0];
+
+
+        // 判断文件格式
+        let suffixs = ["jpg", "jpeg", "png"];
+        let fileName = file.name;
+        let suffix = fileName.substring(fileName.lastIndexOf(".") + 1, fileName.length).toLowerCase();
+        let validateSuffix = false;
+        for (let i = 0; i < suffixs.length; i++) {
+          if (suffixs[i].toLowerCase() === suffix) {
+            validateSuffix = true;
+            break;
+          }
+        }
+        if (!validateSuffix) {
+          Toast.warning("File format is not correct, only supports:：" + suffixs.join(","));
+          return;
+        }
+
         // key："file"必须和后端controller参数名一致
-        formData.append('file', document.querySelector('#file-upload-input').files[0]);
+        formData.append('file', file);
         Loading.show();
         _this.$ajax.post(process.env.VUE_APP_SERVER + '/file/admin/upload', formData).then((response) => {
           Loading.hide();
