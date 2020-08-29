@@ -82,7 +82,11 @@
                 <div class="form-group">
                   <label class="col-sm-2 control-label">image</label>
                   <div class="col-sm-10">
-                    <input type="file" v-on:change="uploadImage()" id="file-upload-input">
+                    <button type="button" @click="selectImage()" class="btn btn-white btn-default btn-round">
+                      <i class="ace-icon fa fa-upload"></i>
+                      Upload Image
+                    </button>
+                    <input type="file" v-on:change="uploadImage()" id="file-upload-input" class="hidden">
                     <div v-show="teacher.image" class="row">
                       <div class="col-md-4">
                         <img v-bind:src="teacher.image" class="img-responsive">
@@ -228,7 +232,12 @@
           console.log("image address:", image);
           _this.teacher.image = image;
         })
+      },
+
+      selectImage() {
+        $("#file-upload-input").trigger("click");
       }
+
     }
   }
 </script>
