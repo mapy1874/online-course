@@ -174,3 +174,18 @@ create table `course_content` (
     primary key (`id`)
 ) engine=innodb default charset=utf8mb4 comment='course content';
 
+
+-- 文件
+drop table if exists `file`;
+create table `file` (
+    `id` char(8) not null default '' comment 'id',
+    `path` varchar(100) not null comment 'path',
+    `name` varchar(100) comment 'name',
+    `suffix` varchar(10) comment 'suffix',
+    `size` int comment 'size|byte B',
+    `use` char(1) comment 'use|enum[FileUseEnum]：COURSE("C", "讲师"), TEACHER("T", "课程")',
+    `created_at` datetime(3) comment 'created_at',
+    `updated_at` datetime(3) comment 'updated_at',
+    primary key (`id`),
+    unique key `path_unique` (`path`)
+) engine=innodb default charset=utf8mb4 comment='file';

@@ -454,3 +454,396 @@ Famous singer. AAAAAAAA
 2020-08-28 23:33:04.255 DEBUG c.c.server.mapper.TeacherMapper.selectByExample   :159  [32mA6ENIb6e[0;39m <==      Total: 3
 2020-08-28 23:33:04.256 INFO  com.course.server.config.LogAspect                :109  [32mA6ENIb6e[0;39m 返回结果: {"content":{"list":[{"id":"ChavuWAB","image":"http://127.0.0.1:9000/file/f/teacher/6x68Yiqp-WechatIMG23.jpeg","intro":"Yoshua Bengio is recognized as one of the world’s leading experts in artificial intelligence and a pioneer in deep learning.\n\nSince 1993, he has been a professor in the Department of Computer Science and Operational Research at the Université de Montréal. CIFAR’s Learning in Machines & Brains Program Co-Director, he is also the founder and scientific director of Mila, the Quebec Artificial Intelligence Institute, the world’s largest university-based research group in deep learning.\n\n","name":"Yoshua Bengio","nickname":"YB","position":"Professor"},{"id":"oZd1735I","image":"http://127.0.0.1:9000/file/f/teacher/2bicifPZ-p3fwowuql8731.png","intro":"Famous singer. AAAAAAAA\n\nFamous singer. AAAAAAAA\nFamous singer. AAAAAAAA","motto":"Moitto","name":"Jay Chou","nickname":"Jaaaay","position":"Singer"},{"id":"x2aLi9Qs","intro":"十二年Java研发和带团队经验，目前在知名第三方支付公司担任项目经理，负责公司核心支付项目的研发管理工作及技术培训工作，多年的支付相关工作造就了严谨的代码开发风格。专注于Java全栈技术研究和分享.","name":"Java","nickname":"甲蛙","position":"高级技术专家"}],"page":1,"size":5,"total":3},"success":true}
 2020-08-28 23:33:04.256 INFO  com.course.server.config.LogAspect                :110  [32mA6ENIb6e[0;39m ------------- 结束 耗时：5 ms -------------
+2020-08-29 20:53:21.991 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-29 20:53:22.019 INFO  com.course.business.config.BusinessApplication    :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-08-29 20:53:22.296 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=ec3dcf96-da91-30fb-9736-a07bc5f0717b
+2020-08-29 20:53:22.315 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-29 20:53:22.321 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-29 20:53:22.389 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2020-08-29 20:53:22.431 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-08-29 20:53:22.432 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-08-29 20:53:22.433 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-08-29 20:53:22.433 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-08-29 20:53:22.444 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-08-29 20:53:22.444 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 422 ms
+2020-08-29 20:53:22.688 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-08-29 20:53:22.688 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-29 20:53:22.802 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-29 20:53:22.969 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m        [0;39m Unable to start LiveReload server
+2020-08-29 20:53:23.030 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-08-29 20:53:23.047 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-08-29 20:53:23.065 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-08-29 20:53:23.067 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-08-29 20:53:23.069 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-08-29 20:53:23.069 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-08-29 20:53:23.069 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-08-29 20:53:23.069 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-08-29 20:53:23.112 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-29 20:53:23.113 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2020-08-29 20:53:23.113 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2020-08-29 20:53:23.113 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2020-08-29 20:53:23.113 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2020-08-29 20:53:23.113 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2020-08-29 20:53:23.113 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2020-08-29 20:53:23.114 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-08-29 20:53:23.116 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2020-08-29 20:53:23.117 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-08-29 20:53:23.117 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-29 20:53:23.118 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1598748803118 with initial instances count: 1
+2020-08-29 20:53:23.122 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-08-29 20:53:23.123 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1598748803123, current=UP, previous=STARTING]
+2020-08-29 20:53:23.123 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002: registering service...
+2020-08-29 20:53:23.128 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002 - registration status: 204
+2020-08-29 20:53:23.128 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-08-29 20:53:23.130 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-08-29 20:53:23.130 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-08-29 20:53:23.132 INFO  com.course.business.config.BusinessApplication    :61   [32m        [0;39m Started BusinessApplication in 1.194 seconds (JVM running for 2165.569)
+2020-08-29 20:53:23.134 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2020-08-29 20:53:23.134 INFO  com.course.business.config.BusinessApplication    :21   [32m        [0;39m Start successfully!!
+2020-08-29 20:53:23.134 INFO  com.course.business.config.BusinessApplication    :22   [32m        [0;39m Business address: 	http://127.0.0.1:9002
+2020-08-29 20:54:44.380 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2020-08-29 20:54:44.380 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1598748884380, current=DOWN, previous=UP]
+2020-08-29 20:54:44.381 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002: registering service...
+2020-08-29 20:54:44.382 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-29 20:54:44.382 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2020-08-29 20:54:44.384 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002 - registration status: 204
+2020-08-29 20:54:44.384 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2020-08-29 20:54:44.387 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002 - deregister  status: 200
+2020-08-29 20:54:44.390 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2020-08-29 20:54:44.682 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-29 20:54:44.708 INFO  com.course.business.config.BusinessApplication    :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-08-29 20:54:44.973 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=ec3dcf96-da91-30fb-9736-a07bc5f0717b
+2020-08-29 20:54:44.995 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-29 20:54:45.003 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-29 20:54:45.060 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2020-08-29 20:54:45.090 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-08-29 20:54:45.091 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-08-29 20:54:45.091 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-08-29 20:54:45.091 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-08-29 20:54:45.099 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-08-29 20:54:45.099 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 389 ms
+2020-08-29 20:54:45.239 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-08-29 20:54:45.239 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-29 20:54:45.353 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-29 20:54:45.538 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m        [0;39m Unable to start LiveReload server
+2020-08-29 20:54:45.594 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-08-29 20:54:45.609 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-08-29 20:54:45.626 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-08-29 20:54:45.627 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-08-29 20:54:45.629 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-08-29 20:54:45.629 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-08-29 20:54:45.629 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-08-29 20:54:45.629 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-08-29 20:54:45.670 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-29 20:54:45.671 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2020-08-29 20:54:45.671 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2020-08-29 20:54:45.671 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2020-08-29 20:54:45.671 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2020-08-29 20:54:45.671 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2020-08-29 20:54:45.671 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2020-08-29 20:54:45.671 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-08-29 20:54:45.674 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2020-08-29 20:54:45.674 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-08-29 20:54:45.674 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-29 20:54:45.675 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1598748885675 with initial instances count: 4
+2020-08-29 20:54:45.679 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-08-29 20:54:45.679 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1598748885679, current=UP, previous=STARTING]
+2020-08-29 20:54:45.680 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002: registering service...
+2020-08-29 20:54:45.684 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002 - registration status: 204
+2020-08-29 20:54:45.685 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-08-29 20:54:45.686 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-08-29 20:54:45.687 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-08-29 20:54:45.688 INFO  com.course.business.config.BusinessApplication    :61   [32m        [0;39m Started BusinessApplication in 1.05 seconds (JVM running for 2248.123)
+2020-08-29 20:54:45.690 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2020-08-29 20:54:45.690 INFO  com.course.business.config.BusinessApplication    :21   [32m        [0;39m Start successfully!!
+2020-08-29 20:54:45.690 INFO  com.course.business.config.BusinessApplication    :22   [32m        [0;39m Business address: 	http://127.0.0.1:9002
+2020-08-29 20:55:24.569 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-29 20:55:24.570 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-08-29 20:55:24.578 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 8 ms
+2020-08-29 20:55:24.583 INFO  com.course.server.config.LogAspect                :76   [32m19TKA1Tt[0;39m ------------- 【teacher】查询开始 -------------
+2020-08-29 20:55:24.584 INFO  com.course.server.config.LogAspect                :77   [32m19TKA1Tt[0;39m 请求地址: http://192.168.1.2:9002/business/admin/teacher/list POST
+2020-08-29 20:55:24.584 INFO  com.course.server.config.LogAspect                :78   [32m19TKA1Tt[0;39m 类名方法: com.course.business.controller.admin.TeacherController.list
+2020-08-29 20:55:24.584 INFO  com.course.server.config.LogAspect                :79   [32m19TKA1Tt[0;39m 远程地址: 192.168.1.2
+2020-08-29 20:55:24.585 INFO  com.course.server.config.LogAspect                :97   [32m19TKA1Tt[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-08-29 20:55:24.587 INFO  c.c.business.controller.admin.TeacherController   :28   [32m19TKA1Tt[0;39m pageDto: 1
+2020-08-29 20:55:24.592 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m19TKA1Tt[0;39m HikariPool-3 - Starting...
+2020-08-29 20:55:24.597 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m19TKA1Tt[0;39m HikariPool-3 - Start completed.
+2020-08-29 20:55:24.598 DEBUG c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32m19TKA1Tt[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2020-08-29 20:55:24.598 DEBUG c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32m19TKA1Tt[0;39m ==> Parameters: 
+2020-08-29 20:55:24.599 TRACE c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32m19TKA1Tt[0;39m <==    Columns: count(0)
+2020-08-29 20:55:24.599 TRACE c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32m19TKA1Tt[0;39m <==        Row: 3
+2020-08-29 20:55:24.600 DEBUG c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32m19TKA1Tt[0;39m <==      Total: 1
+2020-08-29 20:55:24.600 DEBUG c.c.server.mapper.TeacherMapper.selectByExample   :159  [32m19TKA1Tt[0;39m ==>  Preparing: select id, name, nickname, image, position, motto, intro from teacher LIMIT ? 
+2020-08-29 20:55:24.601 DEBUG c.c.server.mapper.TeacherMapper.selectByExample   :159  [32m19TKA1Tt[0;39m ==> Parameters: 5(Integer)
+2020-08-29 20:55:24.602 TRACE c.c.server.mapper.TeacherMapper.selectByExample   :165  [32m19TKA1Tt[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2020-08-29 20:55:24.602 TRACE c.c.server.mapper.TeacherMapper.selectByExample   :165  [32m19TKA1Tt[0;39m <==        Row: ChavuWAB, Yoshua Bengio, YB, http://127.0.0.1:9000/file/f/teacher/5d60jHGe-p3fwowuql8731.png, Professor, null, Yoshua Bengio is recognized as one of the world’s leading experts in artificial intelligence and a pioneer in deep learning.
+
+Since 1993, he has been a professor in the Department of Computer Science and Operational Research at the Université de Montréal. CIFAR’s Learning in Machines & Brains Program Co-Director, he is also the founder and scientific director of Mila, the Quebec Artificial Intelligence Institute, the world’s largest university-based research group in deep learning.
+
+
+2020-08-29 20:55:24.603 TRACE c.c.server.mapper.TeacherMapper.selectByExample   :165  [32m19TKA1Tt[0;39m <==        Row: oZd1735I, Jay Chou, Jaaaay, http://127.0.0.1:9000/file/f/teacher/CKepdWXK-p3fwowuql8731.png, Singer, Moitto, Famous singer. AAAAAAAA
+
+Famous singer. AAAAAAAA
+Famous singer. AAAAAAAA
+2020-08-29 20:55:24.603 TRACE c.c.server.mapper.TeacherMapper.selectByExample   :165  [32m19TKA1Tt[0;39m <==        Row: x2aLi9Qs, Java, 甲蛙, http://127.0.0.1:9000/file/f/teacher/EQdIS2F8-WechatIMG23.jpeg, 高级技术专家, null, 十二年Java研发和带团队经验，目前在知名第三方支付公司担任项目经理，负责公司核心支付项目的研发管理工作及技术培训工作，多年的支付相关工作造就了严谨的代码开发风格。专注于Java全栈技术研究和分享.
+2020-08-29 20:55:24.603 DEBUG c.c.server.mapper.TeacherMapper.selectByExample   :159  [32m19TKA1Tt[0;39m <==      Total: 3
+2020-08-29 20:55:24.609 INFO  com.course.server.config.LogAspect                :109  [32m19TKA1Tt[0;39m 返回结果: {"content":{"list":[{"id":"ChavuWAB","image":"http://127.0.0.1:9000/file/f/teacher/5d60jHGe-p3fwowuql8731.png","intro":"Yoshua Bengio is recognized as one of the world’s leading experts in artificial intelligence and a pioneer in deep learning.\n\nSince 1993, he has been a professor in the Department of Computer Science and Operational Research at the Université de Montréal. CIFAR’s Learning in Machines & Brains Program Co-Director, he is also the founder and scientific director of Mila, the Quebec Artificial Intelligence Institute, the world’s largest university-based research group in deep learning.\n\n","name":"Yoshua Bengio","nickname":"YB","position":"Professor"},{"id":"oZd1735I","image":"http://127.0.0.1:9000/file/f/teacher/CKepdWXK-p3fwowuql8731.png","intro":"Famous singer. AAAAAAAA\n\nFamous singer. AAAAAAAA\nFamous singer. AAAAAAAA","motto":"Moitto","name":"Jay Chou","nickname":"Jaaaay","position":"Singer"},{"id":"x2aLi9Qs","image":"http://127.0.0.1:9000/file/f/teacher/EQdIS2F8-WechatIMG23.jpeg","intro":"十二年Java研发和带团队经验，目前在知名第三方支付公司担任项目经理，负责公司核心支付项目的研发管理工作及技术培训工作，多年的支付相关工作造就了严谨的代码开发风格。专注于Java全栈技术研究和分享.","name":"Java","nickname":"甲蛙","position":"高级技术专家"}],"page":1,"size":5,"total":3},"success":true}
+2020-08-29 20:55:24.609 INFO  com.course.server.config.LogAspect                :110  [32m19TKA1Tt[0;39m ------------- 结束 耗时：27 ms -------------
+2020-08-29 20:56:37.635 INFO  com.course.server.config.LogAspect                :76   [32mD1Egl7II[0;39m ------------- 【teacher】查询开始 -------------
+2020-08-29 20:56:37.635 INFO  com.course.server.config.LogAspect                :77   [32mD1Egl7II[0;39m 请求地址: http://192.168.1.2:9002/business/admin/teacher/list POST
+2020-08-29 20:56:37.636 INFO  com.course.server.config.LogAspect                :78   [32mD1Egl7II[0;39m 类名方法: com.course.business.controller.admin.TeacherController.list
+2020-08-29 20:56:37.636 INFO  com.course.server.config.LogAspect                :79   [32mD1Egl7II[0;39m 远程地址: 192.168.1.2
+2020-08-29 20:56:37.636 INFO  com.course.server.config.LogAspect                :97   [32mD1Egl7II[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-08-29 20:56:37.636 INFO  c.c.business.controller.admin.TeacherController   :28   [32mD1Egl7II[0;39m pageDto: 1
+2020-08-29 20:56:37.637 DEBUG c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mD1Egl7II[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2020-08-29 20:56:37.638 DEBUG c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mD1Egl7II[0;39m ==> Parameters: 
+2020-08-29 20:56:37.638 TRACE c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mD1Egl7II[0;39m <==    Columns: count(0)
+2020-08-29 20:56:37.638 TRACE c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mD1Egl7II[0;39m <==        Row: 3
+2020-08-29 20:56:37.639 DEBUG c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mD1Egl7II[0;39m <==      Total: 1
+2020-08-29 20:56:37.639 DEBUG c.c.server.mapper.TeacherMapper.selectByExample   :159  [32mD1Egl7II[0;39m ==>  Preparing: select id, name, nickname, image, position, motto, intro from teacher LIMIT ? 
+2020-08-29 20:56:37.639 DEBUG c.c.server.mapper.TeacherMapper.selectByExample   :159  [32mD1Egl7II[0;39m ==> Parameters: 5(Integer)
+2020-08-29 20:56:37.640 TRACE c.c.server.mapper.TeacherMapper.selectByExample   :165  [32mD1Egl7II[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2020-08-29 20:56:37.640 TRACE c.c.server.mapper.TeacherMapper.selectByExample   :165  [32mD1Egl7II[0;39m <==        Row: ChavuWAB, Yoshua Bengio, YB, http://127.0.0.1:9000/file/f/teacher/5d60jHGe-p3fwowuql8731.png, Professor, null, Yoshua Bengio is recognized as one of the world’s leading experts in artificial intelligence and a pioneer in deep learning.
+
+Since 1993, he has been a professor in the Department of Computer Science and Operational Research at the Université de Montréal. CIFAR’s Learning in Machines & Brains Program Co-Director, he is also the founder and scientific director of Mila, the Quebec Artificial Intelligence Institute, the world’s largest university-based research group in deep learning.
+
+
+2020-08-29 20:56:37.640 TRACE c.c.server.mapper.TeacherMapper.selectByExample   :165  [32mD1Egl7II[0;39m <==        Row: oZd1735I, Jay Chou, Jaaaay, http://127.0.0.1:9000/file/f/teacher/CKepdWXK-p3fwowuql8731.png, Singer, Moitto, Famous singer. AAAAAAAA
+
+Famous singer. AAAAAAAA
+Famous singer. AAAAAAAA
+2020-08-29 20:56:37.640 TRACE c.c.server.mapper.TeacherMapper.selectByExample   :165  [32mD1Egl7II[0;39m <==        Row: x2aLi9Qs, Java, 甲蛙, http://127.0.0.1:9000/file/f/teacher/EQdIS2F8-WechatIMG23.jpeg, 高级技术专家, null, 十二年Java研发和带团队经验，目前在知名第三方支付公司担任项目经理，负责公司核心支付项目的研发管理工作及技术培训工作，多年的支付相关工作造就了严谨的代码开发风格。专注于Java全栈技术研究和分享.
+2020-08-29 20:56:37.640 DEBUG c.c.server.mapper.TeacherMapper.selectByExample   :159  [32mD1Egl7II[0;39m <==      Total: 3
+2020-08-29 20:56:37.641 INFO  com.course.server.config.LogAspect                :109  [32mD1Egl7II[0;39m 返回结果: {"content":{"list":[{"id":"ChavuWAB","image":"http://127.0.0.1:9000/file/f/teacher/5d60jHGe-p3fwowuql8731.png","intro":"Yoshua Bengio is recognized as one of the world’s leading experts in artificial intelligence and a pioneer in deep learning.\n\nSince 1993, he has been a professor in the Department of Computer Science and Operational Research at the Université de Montréal. CIFAR’s Learning in Machines & Brains Program Co-Director, he is also the founder and scientific director of Mila, the Quebec Artificial Intelligence Institute, the world’s largest university-based research group in deep learning.\n\n","name":"Yoshua Bengio","nickname":"YB","position":"Professor"},{"id":"oZd1735I","image":"http://127.0.0.1:9000/file/f/teacher/CKepdWXK-p3fwowuql8731.png","intro":"Famous singer. AAAAAAAA\n\nFamous singer. AAAAAAAA\nFamous singer. AAAAAAAA","motto":"Moitto","name":"Jay Chou","nickname":"Jaaaay","position":"Singer"},{"id":"x2aLi9Qs","image":"http://127.0.0.1:9000/file/f/teacher/EQdIS2F8-WechatIMG23.jpeg","intro":"十二年Java研发和带团队经验，目前在知名第三方支付公司担任项目经理，负责公司核心支付项目的研发管理工作及技术培训工作，多年的支付相关工作造就了严谨的代码开发风格。专注于Java全栈技术研究和分享.","name":"Java","nickname":"甲蛙","position":"高级技术专家"}],"page":1,"size":5,"total":3},"success":true}
+2020-08-29 20:56:37.641 INFO  com.course.server.config.LogAspect                :110  [32mD1Egl7II[0;39m ------------- 结束 耗时：6 ms -------------
+2020-08-29 20:57:48.992 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2020-08-29 20:57:48.993 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1598749068993, current=DOWN, previous=UP]
+2020-08-29 20:57:48.993 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002: registering service...
+2020-08-29 20:57:48.994 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-29 20:57:48.995 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2020-08-29 20:57:48.996 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002 - registration status: 204
+2020-08-29 20:57:48.997 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2020-08-29 20:57:49.000 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002 - deregister  status: 200
+2020-08-29 20:57:49.003 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2020-08-29 20:57:49.003 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m        [0;39m HikariPool-3 - Shutdown initiated...
+2020-08-29 20:57:49.007 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m        [0;39m HikariPool-3 - Shutdown completed.
+2020-08-29 20:57:49.294 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-29 20:57:49.328 INFO  com.course.business.config.BusinessApplication    :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-08-29 20:57:49.638 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=3d1c2b4f-119a-3f24-af3d-60a8dfe3b135
+2020-08-29 20:57:49.655 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-29 20:57:49.663 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-29 20:57:49.722 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2020-08-29 20:57:49.745 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-08-29 20:57:49.746 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-08-29 20:57:49.746 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-08-29 20:57:49.746 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-08-29 20:57:49.753 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-08-29 20:57:49.753 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 423 ms
+2020-08-29 20:57:49.891 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-08-29 20:57:49.891 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-29 20:57:49.998 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-29 20:57:50.180 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m        [0;39m Unable to start LiveReload server
+2020-08-29 20:57:50.260 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-08-29 20:57:50.287 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-08-29 20:57:50.312 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-08-29 20:57:50.314 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-08-29 20:57:50.317 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-08-29 20:57:50.317 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-08-29 20:57:50.318 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-08-29 20:57:50.318 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-08-29 20:57:50.392 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-29 20:57:50.393 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2020-08-29 20:57:50.393 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2020-08-29 20:57:50.393 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2020-08-29 20:57:50.393 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2020-08-29 20:57:50.394 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2020-08-29 20:57:50.394 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2020-08-29 20:57:50.394 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-08-29 20:57:50.396 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2020-08-29 20:57:50.397 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-08-29 20:57:50.398 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-29 20:57:50.399 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1598749070399 with initial instances count: 4
+2020-08-29 20:57:50.404 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-08-29 20:57:50.405 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1598749070405, current=UP, previous=STARTING]
+2020-08-29 20:57:50.405 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002: registering service...
+2020-08-29 20:57:50.410 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002 - registration status: 204
+2020-08-29 20:57:50.411 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-08-29 20:57:50.413 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-08-29 20:57:50.413 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-08-29 20:57:50.416 INFO  com.course.business.config.BusinessApplication    :61   [32m        [0;39m Started BusinessApplication in 1.177 seconds (JVM running for 2432.845)
+2020-08-29 20:57:50.417 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2020-08-29 20:57:50.418 INFO  com.course.business.config.BusinessApplication    :21   [32m        [0;39m Start successfully!!
+2020-08-29 20:57:50.418 INFO  com.course.business.config.BusinessApplication    :22   [32m        [0;39m Business address: 	http://127.0.0.1:9002
+2020-08-29 20:58:51.266 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2020-08-29 20:58:51.267 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1598749131267, current=DOWN, previous=UP]
+2020-08-29 20:58:51.268 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002: registering service...
+2020-08-29 20:58:51.274 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-29 20:58:51.276 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2020-08-29 20:58:51.278 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002 - registration status: 204
+2020-08-29 20:58:51.279 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2020-08-29 20:58:51.282 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002 - deregister  status: 200
+2020-08-29 20:58:51.285 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2020-08-29 20:58:51.599 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-29 20:58:51.629 INFO  com.course.business.config.BusinessApplication    :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-08-29 20:58:51.903 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=25a903bd-16ab-358f-8512-1d6e10c5e1e3
+2020-08-29 20:58:51.918 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-29 20:58:51.925 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-29 20:58:51.977 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2020-08-29 20:58:52.007 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-08-29 20:58:52.007 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-08-29 20:58:52.007 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-08-29 20:58:52.007 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-08-29 20:58:52.015 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-08-29 20:58:52.016 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 384 ms
+2020-08-29 20:58:52.168 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-08-29 20:58:52.168 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-29 20:58:52.278 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-29 20:58:52.445 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m        [0;39m Unable to start LiveReload server
+2020-08-29 20:58:52.510 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-08-29 20:58:52.526 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-08-29 20:58:52.544 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-08-29 20:58:52.546 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-08-29 20:58:52.547 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-08-29 20:58:52.547 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-08-29 20:58:52.547 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-08-29 20:58:52.548 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-08-29 20:58:52.592 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-29 20:58:52.592 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2020-08-29 20:58:52.593 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2020-08-29 20:58:52.593 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2020-08-29 20:58:52.593 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2020-08-29 20:58:52.593 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2020-08-29 20:58:52.593 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2020-08-29 20:58:52.593 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-08-29 20:58:52.596 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2020-08-29 20:58:52.597 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-08-29 20:58:52.597 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-29 20:58:52.598 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1598749132598 with initial instances count: 4
+2020-08-29 20:58:52.603 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-08-29 20:58:52.603 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1598749132603, current=UP, previous=STARTING]
+2020-08-29 20:58:52.604 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002: registering service...
+2020-08-29 20:58:52.608 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002 - registration status: 204
+2020-08-29 20:58:52.609 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-08-29 20:58:52.610 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-08-29 20:58:52.610 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-08-29 20:58:52.612 INFO  com.course.business.config.BusinessApplication    :61   [32m        [0;39m Started BusinessApplication in 1.083 seconds (JVM running for 2495.039)
+2020-08-29 20:58:52.614 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2020-08-29 20:58:52.614 INFO  com.course.business.config.BusinessApplication    :21   [32m        [0;39m Start successfully!!
+2020-08-29 20:58:52.614 INFO  com.course.business.config.BusinessApplication    :22   [32m        [0;39m Business address: 	http://127.0.0.1:9002
+2020-08-29 21:03:52.606 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-29 21:08:52.605 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-29 21:10:18.392 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2020-08-29 21:10:18.392 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1598749818392, current=DOWN, previous=UP]
+2020-08-29 21:10:18.393 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002: registering service...
+2020-08-29 21:10:18.396 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-29 21:10:18.398 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002 - registration status: 204
+2020-08-29 21:10:18.398 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2020-08-29 21:10:21.406 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2020-08-29 21:10:21.410 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002 - deregister  status: 200
+2020-08-29 21:10:21.417 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2020-08-29 21:10:21.977 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-29 21:10:22.002 INFO  com.course.business.config.BusinessApplication    :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-08-29 21:10:22.262 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=25a903bd-16ab-358f-8512-1d6e10c5e1e3
+2020-08-29 21:10:22.276 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-29 21:10:22.282 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-29 21:10:22.332 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2020-08-29 21:10:22.363 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-08-29 21:10:22.363 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-08-29 21:10:22.363 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-08-29 21:10:22.364 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-08-29 21:10:22.371 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-08-29 21:10:22.371 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 367 ms
+2020-08-29 21:10:22.521 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-08-29 21:10:22.521 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-29 21:10:22.632 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-29 21:10:22.811 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m        [0;39m Unable to start LiveReload server
+2020-08-29 21:10:22.895 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-08-29 21:10:22.921 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-08-29 21:10:22.946 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-08-29 21:10:22.948 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-08-29 21:10:22.951 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-08-29 21:10:22.952 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-08-29 21:10:22.952 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-08-29 21:10:22.952 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-08-29 21:10:23.016 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-29 21:10:23.017 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2020-08-29 21:10:23.017 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2020-08-29 21:10:23.017 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2020-08-29 21:10:23.017 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2020-08-29 21:10:23.017 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2020-08-29 21:10:23.017 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2020-08-29 21:10:23.018 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-08-29 21:10:23.021 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2020-08-29 21:10:23.021 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-08-29 21:10:23.022 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-29 21:10:23.022 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1598749823022 with initial instances count: 4
+2020-08-29 21:10:23.028 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-08-29 21:10:23.028 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1598749823028, current=UP, previous=STARTING]
+2020-08-29 21:10:23.028 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002: registering service...
+2020-08-29 21:10:23.032 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/192.168.1.2:business:9002 - registration status: 204
+2020-08-29 21:10:23.034 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-08-29 21:10:23.035 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-08-29 21:10:23.036 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-08-29 21:10:23.037 INFO  com.course.business.config.BusinessApplication    :61   [32m        [0;39m Started BusinessApplication in 1.107 seconds (JVM running for 3185.462)
+2020-08-29 21:10:23.039 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2020-08-29 21:10:23.039 INFO  com.course.business.config.BusinessApplication    :21   [32m        [0;39m Start successfully!!
+2020-08-29 21:10:23.039 INFO  com.course.business.config.BusinessApplication    :22   [32m        [0;39m Business address: 	http://127.0.0.1:9002
+2020-08-29 21:10:26.432 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-29 21:10:26.432 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-08-29 21:10:26.439 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 7 ms
+2020-08-29 21:10:26.445 INFO  com.course.server.config.LogAspect                :76   [32mXDy12vtm[0;39m ------------- 【teacher】查询开始 -------------
+2020-08-29 21:10:26.445 INFO  com.course.server.config.LogAspect                :77   [32mXDy12vtm[0;39m 请求地址: http://192.168.1.2:9002/business/admin/teacher/list POST
+2020-08-29 21:10:26.446 INFO  com.course.server.config.LogAspect                :78   [32mXDy12vtm[0;39m 类名方法: com.course.business.controller.admin.TeacherController.list
+2020-08-29 21:10:26.446 INFO  com.course.server.config.LogAspect                :79   [32mXDy12vtm[0;39m 远程地址: 192.168.1.2
+2020-08-29 21:10:26.447 INFO  com.course.server.config.LogAspect                :97   [32mXDy12vtm[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-08-29 21:10:26.449 INFO  c.c.business.controller.admin.TeacherController   :28   [32mXDy12vtm[0;39m pageDto: 1
+2020-08-29 21:10:26.452 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mXDy12vtm[0;39m HikariPool-4 - Starting...
+2020-08-29 21:10:26.457 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mXDy12vtm[0;39m HikariPool-4 - Start completed.
+2020-08-29 21:10:26.458 DEBUG c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mXDy12vtm[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2020-08-29 21:10:26.459 DEBUG c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mXDy12vtm[0;39m ==> Parameters: 
+2020-08-29 21:10:26.459 TRACE c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mXDy12vtm[0;39m <==    Columns: count(0)
+2020-08-29 21:10:26.460 TRACE c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32mXDy12vtm[0;39m <==        Row: 3
+2020-08-29 21:10:26.460 DEBUG c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32mXDy12vtm[0;39m <==      Total: 1
+2020-08-29 21:10:26.461 DEBUG c.c.server.mapper.TeacherMapper.selectByExample   :159  [32mXDy12vtm[0;39m ==>  Preparing: select id, name, nickname, image, position, motto, intro from teacher LIMIT ? 
+2020-08-29 21:10:26.461 DEBUG c.c.server.mapper.TeacherMapper.selectByExample   :159  [32mXDy12vtm[0;39m ==> Parameters: 5(Integer)
+2020-08-29 21:10:26.462 TRACE c.c.server.mapper.TeacherMapper.selectByExample   :165  [32mXDy12vtm[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2020-08-29 21:10:26.462 TRACE c.c.server.mapper.TeacherMapper.selectByExample   :165  [32mXDy12vtm[0;39m <==        Row: ChavuWAB, Yoshua Bengio, YB, http://127.0.0.1:9000/file/f/teacher/5d60jHGe-p3fwowuql8731.png, Professor, null, Yoshua Bengio is recognized as one of the world’s leading experts in artificial intelligence and a pioneer in deep learning.
+
+Since 1993, he has been a professor in the Department of Computer Science and Operational Research at the Université de Montréal. CIFAR’s Learning in Machines & Brains Program Co-Director, he is also the founder and scientific director of Mila, the Quebec Artificial Intelligence Institute, the world’s largest university-based research group in deep learning.
+
+
+2020-08-29 21:10:26.462 TRACE c.c.server.mapper.TeacherMapper.selectByExample   :165  [32mXDy12vtm[0;39m <==        Row: oZd1735I, Jay Chou, Jaaaay, http://127.0.0.1:9000/file/f/teacher/CKepdWXK-p3fwowuql8731.png, Singer, Moitto, Famous singer. AAAAAAAA
+
+Famous singer. AAAAAAAA
+Famous singer. AAAAAAAA
+2020-08-29 21:10:26.463 TRACE c.c.server.mapper.TeacherMapper.selectByExample   :165  [32mXDy12vtm[0;39m <==        Row: x2aLi9Qs, Java, 甲蛙, http://127.0.0.1:9000/file/f/teacher/EQdIS2F8-WechatIMG23.jpeg, 高级技术专家, null, 十二年Java研发和带团队经验，目前在知名第三方支付公司担任项目经理，负责公司核心支付项目的研发管理工作及技术培训工作，多年的支付相关工作造就了严谨的代码开发风格。专注于Java全栈技术研究和分享.
+2020-08-29 21:10:26.463 DEBUG c.c.server.mapper.TeacherMapper.selectByExample   :159  [32mXDy12vtm[0;39m <==      Total: 3
+2020-08-29 21:10:26.469 INFO  com.course.server.config.LogAspect                :109  [32mXDy12vtm[0;39m 返回结果: {"content":{"list":[{"id":"ChavuWAB","image":"http://127.0.0.1:9000/file/f/teacher/5d60jHGe-p3fwowuql8731.png","intro":"Yoshua Bengio is recognized as one of the world’s leading experts in artificial intelligence and a pioneer in deep learning.\n\nSince 1993, he has been a professor in the Department of Computer Science and Operational Research at the Université de Montréal. CIFAR’s Learning in Machines & Brains Program Co-Director, he is also the founder and scientific director of Mila, the Quebec Artificial Intelligence Institute, the world’s largest university-based research group in deep learning.\n\n","name":"Yoshua Bengio","nickname":"YB","position":"Professor"},{"id":"oZd1735I","image":"http://127.0.0.1:9000/file/f/teacher/CKepdWXK-p3fwowuql8731.png","intro":"Famous singer. AAAAAAAA\n\nFamous singer. AAAAAAAA\nFamous singer. AAAAAAAA","motto":"Moitto","name":"Jay Chou","nickname":"Jaaaay","position":"Singer"},{"id":"x2aLi9Qs","image":"http://127.0.0.1:9000/file/f/teacher/EQdIS2F8-WechatIMG23.jpeg","intro":"十二年Java研发和带团队经验，目前在知名第三方支付公司担任项目经理，负责公司核心支付项目的研发管理工作及技术培训工作，多年的支付相关工作造就了严谨的代码开发风格。专注于Java全栈技术研究和分享.","name":"Java","nickname":"甲蛙","position":"高级技术专家"}],"page":1,"size":5,"total":3},"success":true}
+2020-08-29 21:10:26.469 INFO  com.course.server.config.LogAspect                :110  [32mXDy12vtm[0;39m ------------- 结束 耗时：26 ms -------------
+2020-08-29 21:10:38.011 INFO  com.course.server.config.LogAspect                :76   [32m5zhlxGfL[0;39m ------------- 【teacher】查询开始 -------------
+2020-08-29 21:10:38.011 INFO  com.course.server.config.LogAspect                :77   [32m5zhlxGfL[0;39m 请求地址: http://192.168.1.2:9002/business/admin/teacher/list POST
+2020-08-29 21:10:38.011 INFO  com.course.server.config.LogAspect                :78   [32m5zhlxGfL[0;39m 类名方法: com.course.business.controller.admin.TeacherController.list
+2020-08-29 21:10:38.011 INFO  com.course.server.config.LogAspect                :79   [32m5zhlxGfL[0;39m 远程地址: 192.168.1.2
+2020-08-29 21:10:38.012 INFO  com.course.server.config.LogAspect                :97   [32m5zhlxGfL[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-08-29 21:10:38.012 INFO  c.c.business.controller.admin.TeacherController   :28   [32m5zhlxGfL[0;39m pageDto: 1
+2020-08-29 21:10:38.014 DEBUG c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32m5zhlxGfL[0;39m ==>  Preparing: SELECT count(0) FROM teacher 
+2020-08-29 21:10:38.014 DEBUG c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32m5zhlxGfL[0;39m ==> Parameters: 
+2020-08-29 21:10:38.015 TRACE c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32m5zhlxGfL[0;39m <==    Columns: count(0)
+2020-08-29 21:10:38.015 TRACE c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :165  [32m5zhlxGfL[0;39m <==        Row: 3
+2020-08-29 21:10:38.015 DEBUG c.c.s.mapper.TeacherMapper.selectByExample_COUNT  :159  [32m5zhlxGfL[0;39m <==      Total: 1
+2020-08-29 21:10:38.016 DEBUG c.c.server.mapper.TeacherMapper.selectByExample   :159  [32m5zhlxGfL[0;39m ==>  Preparing: select id, name, nickname, image, position, motto, intro from teacher LIMIT ? 
+2020-08-29 21:10:38.016 DEBUG c.c.server.mapper.TeacherMapper.selectByExample   :159  [32m5zhlxGfL[0;39m ==> Parameters: 5(Integer)
+2020-08-29 21:10:38.016 TRACE c.c.server.mapper.TeacherMapper.selectByExample   :165  [32m5zhlxGfL[0;39m <==    Columns: id, name, nickname, image, position, motto, intro
+2020-08-29 21:10:38.017 TRACE c.c.server.mapper.TeacherMapper.selectByExample   :165  [32m5zhlxGfL[0;39m <==        Row: ChavuWAB, Yoshua Bengio, YB, http://127.0.0.1:9000/file/f/teacher/5d60jHGe-p3fwowuql8731.png, Professor, null, Yoshua Bengio is recognized as one of the world’s leading experts in artificial intelligence and a pioneer in deep learning.
+
+Since 1993, he has been a professor in the Department of Computer Science and Operational Research at the Université de Montréal. CIFAR’s Learning in Machines & Brains Program Co-Director, he is also the founder and scientific director of Mila, the Quebec Artificial Intelligence Institute, the world’s largest university-based research group in deep learning.
+
+
+2020-08-29 21:10:38.017 TRACE c.c.server.mapper.TeacherMapper.selectByExample   :165  [32m5zhlxGfL[0;39m <==        Row: oZd1735I, Jay Chou, Jaaaay, http://127.0.0.1:9000/file/f/teacher/CKepdWXK-p3fwowuql8731.png, Singer, Moitto, Famous singer. AAAAAAAA
+
+Famous singer. AAAAAAAA
+Famous singer. AAAAAAAA
+2020-08-29 21:10:38.017 TRACE c.c.server.mapper.TeacherMapper.selectByExample   :165  [32m5zhlxGfL[0;39m <==        Row: x2aLi9Qs, Java, 甲蛙, http://127.0.0.1:9000/file/f/teacher/EQdIS2F8-WechatIMG23.jpeg, 高级技术专家, null, 十二年Java研发和带团队经验，目前在知名第三方支付公司担任项目经理，负责公司核心支付项目的研发管理工作及技术培训工作，多年的支付相关工作造就了严谨的代码开发风格。专注于Java全栈技术研究和分享.
+2020-08-29 21:10:38.017 DEBUG c.c.server.mapper.TeacherMapper.selectByExample   :159  [32m5zhlxGfL[0;39m <==      Total: 3
+2020-08-29 21:10:38.018 INFO  com.course.server.config.LogAspect                :109  [32m5zhlxGfL[0;39m 返回结果: {"content":{"list":[{"id":"ChavuWAB","image":"http://127.0.0.1:9000/file/f/teacher/5d60jHGe-p3fwowuql8731.png","intro":"Yoshua Bengio is recognized as one of the world’s leading experts in artificial intelligence and a pioneer in deep learning.\n\nSince 1993, he has been a professor in the Department of Computer Science and Operational Research at the Université de Montréal. CIFAR’s Learning in Machines & Brains Program Co-Director, he is also the founder and scientific director of Mila, the Quebec Artificial Intelligence Institute, the world’s largest university-based research group in deep learning.\n\n","name":"Yoshua Bengio","nickname":"YB","position":"Professor"},{"id":"oZd1735I","image":"http://127.0.0.1:9000/file/f/teacher/CKepdWXK-p3fwowuql8731.png","intro":"Famous singer. AAAAAAAA\n\nFamous singer. AAAAAAAA\nFamous singer. AAAAAAAA","motto":"Moitto","name":"Jay Chou","nickname":"Jaaaay","position":"Singer"},{"id":"x2aLi9Qs","image":"http://127.0.0.1:9000/file/f/teacher/EQdIS2F8-WechatIMG23.jpeg","intro":"十二年Java研发和带团队经验，目前在知名第三方支付公司担任项目经理，负责公司核心支付项目的研发管理工作及技术培训工作，多年的支付相关工作造就了严谨的代码开发风格。专注于Java全栈技术研究和分享.","name":"Java","nickname":"甲蛙","position":"高级技术专家"}],"page":1,"size":5,"total":3},"success":true}
+2020-08-29 21:10:38.018 INFO  com.course.server.config.LogAspect                :110  [32m5zhlxGfL[0;39m ------------- 结束 耗时：7 ms -------------

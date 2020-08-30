@@ -427,23 +427,32 @@
                 </router-link>
                 <b class="arrow"></b>
               </li>
-
-<!--              <li class="" id="business-chapter-sidebar">-->
-<!--                <router-link to="/business/chapter">-->
-<!--                  <i class="menu-icon fa fa-caret-right" ></i>-->
-<!--                  Chapter Management-->
-<!--                </router-link>-->
-<!--                <b class="arrow"></b>-->
-<!--              </li>-->
-<!--              <li class="" id="business-section-sidebar">-->
-<!--                <router-link to="/business/section">-->
-<!--                  <i class="menu-icon fa fa-caret-right" ></i>-->
-<!--                  Section Management-->
-<!--                </router-link>-->
-<!--                <b class="arrow"></b>-->
-<!--              </li>-->
             </ul>
           </li>
+
+          <li class="active open">
+            <a href="#" class="dropdown-toggle">
+              <i class="menu-icon fa fa-list"></i>
+              <span class="menu-text"> File Management </span>
+
+              <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+              <li class="active" id="file-file-sidebar">
+                <router-link to="/file/file">
+                  <i class="menu-icon fa fa-caret-right"></i>
+                  File Management
+                </router-link>
+
+                <b class="arrow"></b>
+              </li>
+
+            </ul>
+          </li>
+
         </ul><!-- /.nav-list -->
 
         <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
