@@ -1758,3 +1758,107 @@ org.apache.tomcat.util.http.fileupload.FileUploadBase$FileSizeLimitExceededExcep
 2020-08-29 22:06:27.518 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m        [0;39m HikariPool-3 - Shutdown completed.
 2020-08-29 22:06:28.247 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2020-08-29 22:06:28.267 INFO  com.course.file.config.FileApplication            :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-08-29 22:06:28.506 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=723634fa-419e-37ed-8db9-6e5091222f0b
+2020-08-29 22:06:28.519 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-29 22:06:28.525 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-29 22:06:28.573 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2020-08-29 22:06:28.598 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9003 (http)
+2020-08-29 22:06:28.598 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9003"]
+2020-08-29 22:06:28.599 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-08-29 22:06:28.599 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-08-29 22:06:28.605 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/file]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-08-29 22:06:28.605 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 336 ms
+2020-08-29 22:06:28.804 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-08-29 22:06:28.805 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-29 22:06:28.910 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-29 22:06:29.085 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :61   [32m        [0;39m Unable to start LiveReload server
+2020-08-29 22:06:29.148 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-08-29 22:06:29.169 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-08-29 22:06:29.200 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-08-29 22:06:29.202 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-08-29 22:06:29.204 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-08-29 22:06:29.204 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-08-29 22:06:29.204 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-08-29 22:06:29.205 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-08-29 22:06:29.253 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-08-29 22:06:29.253 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2020-08-29 22:06:29.254 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2020-08-29 22:06:29.254 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2020-08-29 22:06:29.254 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2020-08-29 22:06:29.254 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2020-08-29 22:06:29.254 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2020-08-29 22:06:29.254 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-08-29 22:06:29.257 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2020-08-29 22:06:29.258 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-08-29 22:06:29.258 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-29 22:06:29.259 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1598753189259 with initial instances count: 4
+2020-08-29 22:06:29.264 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application FILE with eureka with status UP
+2020-08-29 22:06:29.264 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1598753189264, current=UP, previous=STARTING]
+2020-08-29 22:06:29.265 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_FILE/192.168.1.2:file:9003: registering service...
+2020-08-29 22:06:29.270 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9003"]
+2020-08-29 22:06:29.271 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_FILE/192.168.1.2:file:9003 - registration status: 204
+2020-08-29 22:06:29.271 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9003 (http) with context path '/file'
+2020-08-29 22:06:29.272 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9003
+2020-08-29 22:06:29.273 INFO  com.course.file.config.FileApplication            :61   [32m        [0;39m Started FileApplication in 1.091 seconds (JVM running for 6555.491)
+2020-08-29 22:06:29.275 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2020-08-29 22:06:29.275 INFO  com.course.file.config.FileApplication            :23   [32m        [0;39m Start successfully！！
+2020-08-29 22:06:29.275 INFO  com.course.file.config.FileApplication            :24   [32m        [0;39m File address: 	http://127.0.0.1:9003
+2020-08-29 22:06:31.921 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/file]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-29 22:06:31.921 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-08-29 22:06:31.926 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 5 ms
+2020-08-29 22:06:31.935 INFO  com.course.server.config.LogAspect                :76   [32mMf3dzWhJ[0;39m ------------- 【file】查询开始 -------------
+2020-08-29 22:06:31.936 INFO  com.course.server.config.LogAspect                :77   [32mMf3dzWhJ[0;39m 请求地址: http://192.168.1.2:9003/file/admin/file/list POST
+2020-08-29 22:06:31.936 INFO  com.course.server.config.LogAspect                :78   [32mMf3dzWhJ[0;39m 类名方法: com.course.file.controller.admin.FileController.list
+2020-08-29 22:06:31.937 INFO  com.course.server.config.LogAspect                :79   [32mMf3dzWhJ[0;39m 远程地址: 192.168.1.2
+2020-08-29 22:06:31.940 INFO  com.course.server.config.LogAspect                :97   [32mMf3dzWhJ[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-08-29 22:06:31.945 INFO  com.course.file.controller.admin.FileController   :31   [32mMf3dzWhJ[0;39m pageDto: 1
+2020-08-29 22:06:31.953 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mMf3dzWhJ[0;39m HikariPool-4 - Starting...
+2020-08-29 22:06:31.959 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mMf3dzWhJ[0;39m HikariPool-4 - Start completed.
+2020-08-29 22:06:31.960 DEBUG c.c.server.mapper.FileMapper.selectByExample_COUNT:159  [32mMf3dzWhJ[0;39m ==>  Preparing: SELECT count(0) FROM file 
+2020-08-29 22:06:31.961 DEBUG c.c.server.mapper.FileMapper.selectByExample_COUNT:159  [32mMf3dzWhJ[0;39m ==> Parameters: 
+2020-08-29 22:06:31.964 TRACE c.c.server.mapper.FileMapper.selectByExample_COUNT:165  [32mMf3dzWhJ[0;39m <==    Columns: count(0)
+2020-08-29 22:06:31.964 TRACE c.c.server.mapper.FileMapper.selectByExample_COUNT:165  [32mMf3dzWhJ[0;39m <==        Row: 1
+2020-08-29 22:06:31.965 DEBUG c.c.server.mapper.FileMapper.selectByExample_COUNT:159  [32mMf3dzWhJ[0;39m <==      Total: 1
+2020-08-29 22:06:31.966 DEBUG c.course.server.mapper.FileMapper.selectByExample :159  [32mMf3dzWhJ[0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at from file LIMIT ? 
+2020-08-29 22:06:31.966 DEBUG c.course.server.mapper.FileMapper.selectByExample :159  [32mMf3dzWhJ[0;39m ==> Parameters: 5(Integer)
+2020-08-29 22:06:31.967 TRACE c.course.server.mapper.FileMapper.selectByExample :165  [32mMf3dzWhJ[0;39m <==    Columns: id, path, name, suffix, size, use, created_at, updated_at
+2020-08-29 22:06:31.967 TRACE c.course.server.mapper.FileMapper.selectByExample :165  [32mMf3dzWhJ[0;39m <==        Row: 3zpmIBqA, teacher/VynqYjd5.jpeg, WechatIMG2.jpeg, jpeg, 100889, , 2020-08-29 21:22:48.659, 2020-08-29 21:22:48.659
+2020-08-29 22:06:31.968 DEBUG c.course.server.mapper.FileMapper.selectByExample :159  [32mMf3dzWhJ[0;39m <==      Total: 1
+2020-08-29 22:06:31.975 INFO  com.course.server.config.LogAspect                :109  [32mMf3dzWhJ[0;39m 返回结果: {"content":{"list":[{"createdAt":1598750568659,"id":"3zpmIBqA","name":"WechatIMG2.jpeg","path":"teacher/VynqYjd5.jpeg","size":100889,"suffix":"jpeg","updatedAt":1598750568659,"use":""}],"page":1,"size":5,"total":1},"success":true}
+2020-08-29 22:06:31.975 INFO  com.course.server.config.LogAspect                :110  [32mMf3dzWhJ[0;39m ------------- 结束 耗时：43 ms -------------
+2020-08-29 22:07:28.210 INFO  com.course.server.config.LogAspect                :76   [32mTPMWjUNe[0;39m ------------- 【file】查询开始 -------------
+2020-08-29 22:07:28.210 INFO  com.course.server.config.LogAspect                :77   [32mTPMWjUNe[0;39m 请求地址: http://192.168.1.2:9003/file/admin/file/list POST
+2020-08-29 22:07:28.210 INFO  com.course.server.config.LogAspect                :78   [32mTPMWjUNe[0;39m 类名方法: com.course.file.controller.admin.FileController.list
+2020-08-29 22:07:28.211 INFO  com.course.server.config.LogAspect                :79   [32mTPMWjUNe[0;39m 远程地址: 192.168.1.2
+2020-08-29 22:07:28.211 INFO  com.course.server.config.LogAspect                :97   [32mTPMWjUNe[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-08-29 22:07:28.211 INFO  com.course.file.controller.admin.FileController   :31   [32mTPMWjUNe[0;39m pageDto: 1
+2020-08-29 22:07:28.214 DEBUG c.c.server.mapper.FileMapper.selectByExample_COUNT:159  [32mTPMWjUNe[0;39m ==>  Preparing: SELECT count(0) FROM file 
+2020-08-29 22:07:28.214 DEBUG c.c.server.mapper.FileMapper.selectByExample_COUNT:159  [32mTPMWjUNe[0;39m ==> Parameters: 
+2020-08-29 22:07:28.215 TRACE c.c.server.mapper.FileMapper.selectByExample_COUNT:165  [32mTPMWjUNe[0;39m <==    Columns: count(0)
+2020-08-29 22:07:28.215 TRACE c.c.server.mapper.FileMapper.selectByExample_COUNT:165  [32mTPMWjUNe[0;39m <==        Row: 1
+2020-08-29 22:07:28.216 DEBUG c.c.server.mapper.FileMapper.selectByExample_COUNT:159  [32mTPMWjUNe[0;39m <==      Total: 1
+2020-08-29 22:07:28.216 DEBUG c.course.server.mapper.FileMapper.selectByExample :159  [32mTPMWjUNe[0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at from file LIMIT ? 
+2020-08-29 22:07:28.217 DEBUG c.course.server.mapper.FileMapper.selectByExample :159  [32mTPMWjUNe[0;39m ==> Parameters: 5(Integer)
+2020-08-29 22:07:28.218 TRACE c.course.server.mapper.FileMapper.selectByExample :165  [32mTPMWjUNe[0;39m <==    Columns: id, path, name, suffix, size, use, created_at, updated_at
+2020-08-29 22:07:28.218 TRACE c.course.server.mapper.FileMapper.selectByExample :165  [32mTPMWjUNe[0;39m <==        Row: 3zpmIBqA, teacher/VynqYjd5.jpeg, WechatIMG2.jpeg, jpeg, 100889, , 2020-08-29 21:22:48.659, 2020-08-29 21:22:48.659
+2020-08-29 22:07:28.219 DEBUG c.course.server.mapper.FileMapper.selectByExample :159  [32mTPMWjUNe[0;39m <==      Total: 1
+2020-08-29 22:07:28.219 INFO  com.course.server.config.LogAspect                :109  [32mTPMWjUNe[0;39m 返回结果: {"content":{"list":[{"createdAt":1598750568659,"id":"3zpmIBqA","name":"WechatIMG2.jpeg","path":"teacher/VynqYjd5.jpeg","size":100889,"suffix":"jpeg","updatedAt":1598750568659,"use":""}],"page":1,"size":5,"total":1},"success":true}
+2020-08-29 22:07:28.219 INFO  com.course.server.config.LogAspect                :110  [32mTPMWjUNe[0;39m ------------- 结束 耗时：9 ms -------------
+2020-08-29 22:08:57.713 INFO  com.course.server.config.LogAspect                :76   [32m1xKPN0sM[0;39m ------------- 【file】查询开始 -------------
+2020-08-29 22:08:57.714 INFO  com.course.server.config.LogAspect                :77   [32m1xKPN0sM[0;39m 请求地址: http://192.168.1.2:9003/file/admin/file/list POST
+2020-08-29 22:08:57.714 INFO  com.course.server.config.LogAspect                :78   [32m1xKPN0sM[0;39m 类名方法: com.course.file.controller.admin.FileController.list
+2020-08-29 22:08:57.714 INFO  com.course.server.config.LogAspect                :79   [32m1xKPN0sM[0;39m 远程地址: 192.168.1.2
+2020-08-29 22:08:57.714 INFO  com.course.server.config.LogAspect                :97   [32m1xKPN0sM[0;39m 请求参数: [{"page":1,"size":5,"total":0}]
+2020-08-29 22:08:57.714 INFO  com.course.file.controller.admin.FileController   :31   [32m1xKPN0sM[0;39m pageDto: 1
+2020-08-29 22:08:57.715 DEBUG c.c.server.mapper.FileMapper.selectByExample_COUNT:159  [32m1xKPN0sM[0;39m ==>  Preparing: SELECT count(0) FROM file 
+2020-08-29 22:08:57.716 DEBUG c.c.server.mapper.FileMapper.selectByExample_COUNT:159  [32m1xKPN0sM[0;39m ==> Parameters: 
+2020-08-29 22:08:57.716 TRACE c.c.server.mapper.FileMapper.selectByExample_COUNT:165  [32m1xKPN0sM[0;39m <==    Columns: count(0)
+2020-08-29 22:08:57.716 TRACE c.c.server.mapper.FileMapper.selectByExample_COUNT:165  [32m1xKPN0sM[0;39m <==        Row: 1
+2020-08-29 22:08:57.717 DEBUG c.c.server.mapper.FileMapper.selectByExample_COUNT:159  [32m1xKPN0sM[0;39m <==      Total: 1
+2020-08-29 22:08:57.717 DEBUG c.course.server.mapper.FileMapper.selectByExample :159  [32m1xKPN0sM[0;39m ==>  Preparing: select id, `path`, `name`, suffix, `size`, `use`, created_at, updated_at from file LIMIT ? 
+2020-08-29 22:08:57.717 DEBUG c.course.server.mapper.FileMapper.selectByExample :159  [32m1xKPN0sM[0;39m ==> Parameters: 5(Integer)
+2020-08-29 22:08:57.718 TRACE c.course.server.mapper.FileMapper.selectByExample :165  [32m1xKPN0sM[0;39m <==    Columns: id, path, name, suffix, size, use, created_at, updated_at
+2020-08-29 22:08:57.718 TRACE c.course.server.mapper.FileMapper.selectByExample :165  [32m1xKPN0sM[0;39m <==        Row: 3zpmIBqA, teacher/VynqYjd5.jpeg, WechatIMG2.jpeg, jpeg, 100889, , 2020-08-29 21:22:48.659, 2020-08-29 21:22:48.659
+2020-08-29 22:08:57.718 DEBUG c.course.server.mapper.FileMapper.selectByExample :159  [32m1xKPN0sM[0;39m <==      Total: 1
+2020-08-29 22:08:57.719 INFO  com.course.server.config.LogAspect                :109  [32m1xKPN0sM[0;39m 返回结果: {"content":{"list":[{"createdAt":1598750568659,"id":"3zpmIBqA","name":"WechatIMG2.jpeg","path":"teacher/VynqYjd5.jpeg","size":100889,"suffix":"jpeg","updatedAt":1598750568659,"use":""}],"page":1,"size":5,"total":1},"success":true}
+2020-08-29 22:08:57.719 INFO  com.course.server.config.LogAspect                :110  [32m1xKPN0sM[0;39m ------------- 结束 耗时：6 ms -------------
