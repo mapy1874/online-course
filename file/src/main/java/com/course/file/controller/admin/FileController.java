@@ -35,28 +35,4 @@ public class FileController {
         responseDto.setContent(pageDto);
         return responseDto;
     }
-
-    // save, update when id have value, create when id is null
-    @PostMapping("/save")
-    public ResponseDto save(@RequestBody FileDto fileDto) {
-        // validation in saving
-            ValidatorUtil.require(fileDto.getPath(), "relative path");
-                ValidatorUtil.length(fileDto.getPath(), "relative path", 1, 100);
-                ValidatorUtil.length(fileDto.getName(), "file name", 1, 100);
-                ValidatorUtil.length(fileDto.getSuffix(), "suffix", 1, 10);
-
-        ResponseDto responseDto = new ResponseDto();
-        fileService.save(fileDto);
-        responseDto.setContent(fileDto);
-        return responseDto;
-    }
-
-    // delete
-    @DeleteMapping("/delete/{id}")
-    public ResponseDto delete(@PathVariable String id) {
-        ResponseDto responseDto = new ResponseDto();
-        fileService.delete(id);
-        return responseDto;
-    }
-
 }
