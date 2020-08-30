@@ -1,7 +1,9 @@
 package com.course.file.controller.admin;
 
 import com.course.server.domain.Test;
+import com.course.server.dto.FileDto;
 import com.course.server.dto.ResponseDto;
+import com.course.server.service.FileService;
 import com.course.server.service.TestService;
 import com.course.server.util.UuidUtil;
 import org.slf4j.Logger;
@@ -29,25 +31,37 @@ public class UploadController {
     @Value("${file.path}")
     private String FILE_PATH;
 
+    @Resource
+    private FileService fileService;
+
     @RequestMapping("/upload")
-    public ResponseDto test(@RequestParam MultipartFile file) throws IOException {
+    public ResponseDto upload(@RequestParam MultipartFile file) throws IOException {
         LOG.info("Uploading file: {}", file);
         LOG.info(file.getOriginalFilename());
         LOG.info(String.valueOf(file.getSize()));
 
         // 保存文件到本地
-        String fileName = file.getOriginalFilename();
         String key = UuidUtil.getShortUuid();
+        String fileName = file.getOriginalFilename();
+        String suffix = fileName.substring(fileName.lastIndexOf(".")+1).toLowerCase();
+        String path = "teacher/" + key + "." + suffix;
         // do not forger / before Users!
-        String fullPath = FILE_PATH+"teacher/" + key + "-" + fileName;
+        String fullPath = FILE_PATH+path;
         File dest = new File(fullPath);
-        LOG.info(dest.getAbsolutePath());
-
         file.transferTo(dest);
         LOG.info(dest.getAbsolutePath());
 
+        LOG.info("Start saving file");
+        FileDto fileDto = new FileDto();
+        fileDto.setPath(path);
+        fileDto.setName(fileName);
+        fileDto.setSize(Math.toIntExact(file.getSize()));
+        fileDto.setSuffix(suffix);
+        fileDto.setUse("");
+        fileService.save(fileDto);
+
         ResponseDto responseDto = new ResponseDto();
-        responseDto.setContent(FILE_DOMAIN+"f/teacher/"+key+"-"+fileName);
+        responseDto.setContent(FILE_DOMAIN+path);
         return responseDto;
     }
 }
