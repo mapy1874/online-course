@@ -96,6 +96,18 @@
                 <label class="col-sm-2 control-label">video</label>
                 <div class="col-sm-10">
                   <input v-model="section.video" type="text" class="form-control">
+                    <div class="col-sm-10">
+                      <file v-bind:id="'video-upload'"
+                            v-bind:text="'Upload Video'"
+                            v-bind:suffixs="['mp4']"
+                            v-bind:use="FILE_USE.COURSE.key"
+                            v-bind:after-upload="afterUpload"></file>
+                      <div v-show="section.video" class="row">
+                        <div class="col-md-9">
+                          <video v-bind:src="section.video" controls="controls"></video>
+                        </div>
+                      </div>
+                    </div>
                 </div>
               </div>
               <div class="form-group">
@@ -133,14 +145,17 @@
 
 <script>
   import Pagination from "../../components/pagination.vue"
+  import File from "../../components/file.vue"
+
   export default {
     name: "business-section",
-    components: {Pagination},
+    components: {Pagination, File},
     data: function() {
       return {
       section: {},
       sections: [],
       SECTION_CHARGE: SECTION_CHARGE,
+      FILE_USE: FILE_USE,
       course: {},
       chapter: {},
     }
@@ -237,6 +252,21 @@
         _this.section = $.extend({},section);
         $("#form-modal").modal("show");
       },
+
+      afterUpload(resp) {
+        let _this = this;
+        let video = resp.content.path;
+        _this.section.video = video;
+      },
+
     }
   }
 </script>
+
+<style scoped>
+  video {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+</style>
