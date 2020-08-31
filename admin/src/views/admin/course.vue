@@ -66,7 +66,7 @@
               <button @click="toChapter(course)" class="btn btn-xs btn-white btn-info btn-round">
                 Chapter
               </button>
-              <button v-on:click="editContent(course)" class="btn btn-white btn-xs btn-info btn-round">
+              <button v-on:click="toContent(course)" class="btn btn-white btn-xs btn-info btn-round">
                 Content
               </button>
             </p>
@@ -192,73 +192,7 @@
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-    <div id="course-content-modal" class="modal fade" tabindex="-1" role="dialog" style="overflow: auto">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Edit Content</h4>
-          </div>
-          <div class="modal-body">
-            <file v-bind:input-id="'image-upload'"
-                  v-bind:text="'Upload File1'"
-                  v-bind:suffixs="['jpg', 'jpeg', 'png', 'mp4']"
-                  v-bind:use="FILE_USE.COURSE.key"
-                  v-bind:after-upload="afterUploadContentFile"></file>
 
-            <br>
-
-            <table id="file-table" class="table table-bordered table-hover">
-              <thead>
-              <tr>
-                <th>name</th>
-                <th>url</th>
-                <th>size</th>
-                <th>operation</th>
-              </tr>
-              </thead>
-
-              <tbody>
-              <tr v-for="(f, i) in files" v-bind:key="f.id">
-                <td>{{f.name}}</td>
-                <td>{{f.url}}</td>
-                <td>{{f.size | formatFileSize}}</td>
-                <td>
-                  <button v-on:click="delFile(f)" class="btn btn-white btn-xs btn-warning btn-round">
-                    <i class="ace-icon fa fa-times red2"></i>
-                    Delete
-                  </button>
-                </td>
-              </tr>
-              </tbody>
-            </table>
-
-            <form class="form-horizontal">
-              <div class="form-group">
-                <div class="col-lg-12">
-                  {{saveContentLabel}}
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-lg-12">
-                  <div id="content"></div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-white btn-default btn-round" data-dismiss="modal">
-              <i class="ace-icon fa fa-times"></i>
-              Cancel
-            </button>
-            <button type="button" class="btn btn-white btn-info btn-round" v-on:click="saveContent()">
-              <i class="ace-icon fa fa-plus blue"></i>
-              Save
-            </button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
 
 
     <div id="course-sort-modal" class="modal fade" tabindex="-1" role="dialog">
@@ -329,7 +263,6 @@
           newSort: 0,
         },
         teachers: [],
-
       }
     },
     mounted: function() {
@@ -431,6 +364,15 @@
         let _this = this;
         SessionStorage.set(SESSION_KEY_COURSE, course);
         _this.$router.push("/business/chapter")
+      },
+
+      /**
+       * 点击【内容】
+       */
+      toContent(course) {
+        let _this = this;
+        SessionStorage.set(SESSION_KEY_COURSE, course);
+        _this.$router.push("/business/content");
       },
 
       allCategory() {
