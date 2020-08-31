@@ -105,12 +105,12 @@
                 <label class="col-sm-2 control-label">cover</label>
                 <div class="col-sm-10">
 
-
-                  <file v-bind:id="'image-upload'"
+                  <file v-bind:input-id="'content-file-upload'"
                         v-bind:text="'Upload Cover'"
                         v-bind:suffixs="['jpg', 'jpeg', 'png']"
                         v-bind:use="FILE_USE.COURSE.key"
                         v-bind:after-upload="afterUpload"></file>
+
                   <div v-show="course.image" class="row">
                     <div class="col-md-6">
                       <img v-bind:src="course.image" class="img-responsive">
@@ -192,7 +192,7 @@
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-    <div id="course-content-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div id="course-content-modal" class="modal fade" tabindex="-1" role="dialog" style="overflow: auto">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -200,6 +200,39 @@
             <h4 class="modal-title">Edit Content</h4>
           </div>
           <div class="modal-body">
+            <file v-bind:input-id="'image-upload'"
+                  v-bind:text="'Upload File1'"
+                  v-bind:suffixs="['jpg', 'jpeg', 'png', 'mp4']"
+                  v-bind:use="FILE_USE.COURSE.key"
+                  v-bind:after-upload="afterUploadContentFile"></file>
+
+            <br>
+
+            <table id="file-table" class="table table-bordered table-hover">
+              <thead>
+              <tr>
+                <th>name</th>
+                <th>url</th>
+                <th>size</th>
+                <th>operation</th>
+              </tr>
+              </thead>
+
+              <tbody>
+              <tr v-for="(f, i) in files" v-bind:key="f.id">
+                <td>{{f.name}}</td>
+                <td>{{f.url}}</td>
+                <td>{{f.size | formatFileSize}}</td>
+                <td>
+                  <button v-on:click="delFile(f)" class="btn btn-white btn-xs btn-warning btn-round">
+                    <i class="ace-icon fa fa-times red2"></i>
+                    Delete
+                  </button>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+
             <form class="form-horizontal">
               <div class="form-group">
                 <div class="col-lg-12">
@@ -287,6 +320,7 @@
         COURSE_STATUS: COURSE_STATUS,
         FILE_USE: FILE_USE,
         categorys: [],
+        files: [],
         tree: {},
         saveContentLabel: "",
         sort: {
@@ -473,6 +507,9 @@
         $("#content").summernote('code', '');
         _this.saveContentLabel = "";
 
+        // load content file list
+        _this.listContentFiles();
+
         Loading.show();
         _this.$ajax.get(process.env.VUE_APP_SERVER + '/business/admin/course/find-content/' + id).then((response)=>{
           Loading.hide();
@@ -570,6 +607,54 @@
         let _this = this;
         let image = resp.content.path;
         _this.course.image = image;
+      },
+
+      /**
+       * 加载内容文件列表
+       */
+      listContentFiles() {
+        let _this = this;
+        _this.$ajax.get(process.env.VUE_APP_SERVER + '/business/admin/course-content-file/list/' + _this.course.id).then((response)=>{
+          let resp = response.data;
+          if (resp.success) {
+            _this.files = resp.content;
+          }
+        });
+      },
+
+      /**
+       * 上传内容文件后，保存内容文件记录
+       */
+      afterUploadContentFile(response) {
+        let _this = this;
+        console.log("saving content file");
+        let file = response.content;
+        file.courseId = _this.course.id;
+        file.url = file.path;
+        _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/admin/course-content-file/save', file).then((response)=>{
+          let resp = response.data;
+          if (resp.success) {
+            Toast.success("File uploaded");
+            _this.files.push(resp.content);
+          }
+        });
+
+      },
+
+      /**
+       * 删除内容文件
+       */
+      delFile(f) {
+        let _this = this;
+        Confirm.show("You cannot revert the deletion. Go ahead？", function () {
+          _this.$ajax.delete(process.env.VUE_APP_SERVER + '/business/admin/course-content-file/delete/' + f.id).then((response)=>{
+            let resp = response.data;
+            if (resp.success) {
+              Toast.success("Deleted!");
+              Tool.removeObj(_this.files, f);
+            }
+          });
+        });
       },
     }
   }

@@ -97,7 +97,7 @@
                 <div class="col-sm-10">
                   <input v-model="section.video" type="text" class="form-control">
                     <div class="col-sm-10">
-                      <file v-bind:id="'video-upload'"
+                      <file v-bind:input-id="'video-upload'"
                             v-bind:text="'Upload Video'"
                             v-bind:suffixs="['mp4']"
                             v-bind:use="FILE_USE.COURSE.key"

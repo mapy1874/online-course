@@ -174,6 +174,17 @@ create table `course_content` (
     primary key (`id`)
 ) engine=innodb default charset=utf8mb4 comment='course content';
 
+-- 课程内容文件
+drop table if exists `course_content_file`;
+create table `course_content_file` (
+    `id` char(8) not null default '' comment 'id',
+    `course_id` char(8) not null comment 'course id',
+    `url` varchar(100) comment 'url',
+    `name` varchar(100) comment 'file name',
+    `size` int comment 'size|byte b',
+    primary key (`id`)
+) engine=innodb default charset=utf8mb4 comment='course content file';
+
 
 -- 文件
 drop table if exists `file`;
